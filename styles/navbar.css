@@ -17,12 +17,13 @@
     /* text-align: center; */
 
 }
-a,li{
+
+#options>h4>a{
     text-decoration: none;
     color: white;
     text-align: center;
 }
-#options a:hover {
+#options>h4 a:hover {
     color: #00a4bb;
 }
 
@@ -46,13 +47,19 @@ a,li{
 } */
 .traveloptions{
     margin: auto;
+    color: white;
+    list-style-type: none;
+    cursor: pointer;
 }
-.traveloptions:hover>a{
+.traveloptions:hover{
     color: #00a4bb;
+}
+.sub-menu-1>ul>li>i{
+    padding-right: 10px;
 }
 
 .sub-menu-1{
-    height: 420px;
+    height: 450px;
     width: 350px;
     /* border: black 1px solid; */
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
@@ -60,9 +67,9 @@ a,li{
     display: none;
     
 }
-.sub-menu-1 li{
+.sub-menu-1,.sub-menu-2 li{
     color: black;
-    line-height: 20px;
+    /* line-height: 20px; */
 }
 #logooption li{
     
@@ -75,24 +82,104 @@ a,li{
     display: block;
     position: absolute;
     background-color: #fff;
-   
     
 }
 
 #logooption>li:hover .sub-menu-1 ul{
     display: block;
     margin: 10px;
+    margin-left: -20px;
     /* color: #557eb0; */
 }
 #logooption>li:hover .sub-menu-1 ul li{
     width: 150px;
-    padding: 10px ;
-    /* color: #557eb0; */
-    /* margin-top: 50px; */
-    /* padding-top: 30px; */
-    /* line-height: 20px; */
+    padding: 14px ;
+     line-height: 20px; 
+     cursor: pointer;
 }
-.sub-menu-1 ul li:hover a{
+.sub-menu-1 ul li:hover {
 
     color: #007e8f;
+}
+.sub-menu-2{
+    height: 350px;
+    width: 350px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 15px;
+    display: none;
+    margin-left: -22%;
+    
+}
+
+.sub-menu-2 li{
+    list-style-type: none;
+}
+
+.sub-menu-2 h3{
+    padding: 0 5% 0 5%;
+    text-align: start;
+    color: black;
+}
+.sub-menu-2 #signup{
+    text-align: center;
+    /* color: black; */
+}
+
+.sub-menu-2>#signup, ul a{
+    color: #00a4bb;
+    cursor: pointer;
+    text-decoration: none;
+}
+.sub-menu-2 #signup a:hover{
+
+    color: #143e44;
+}
+.sub-menu-2 #signin a:hover{
+
+    color: white;
+}
+
+.feedback {
+    color: gray;
+}
+
+.signin:hover .sub-menu-2{
+
+    display: block;
+    position: absolute;
+    background-color: #fff;
+}
+
+#signin{
+    width: 90%;
+    height: 25px;
+    border: 1px solid #C83259;
+    text-align: center;
+    margin: auto;
+    padding-top: 8px;
+    border-radius: 5px;
+    color: white;
+    background-color: #C83259;
+    cursor: pointer;
+}
+#signin a{
+    color: white;
+    text-decoration: none;
+}
+#signup a{
+    color: #00a4bb;
+    text-decoration: none;
+}
+
+.sub-menu-2 li{
+
+    width: 150px;
+    padding: 14px ;
+     line-height: 20px;
+     font-weight: lighter;
+     margin-left: -10%;
+    
+}
+hr{
+    margin-left: -13%;
 }
