@@ -1,197 +1,153 @@
-body {
-  padding: 0%;
-  margin: 0%;
-}
-#navbar {
+#navbar{
   margin-top: -8px;
+  border: 1px solid #0c253c;
   width: 100%;
-  height: 80px;
+  height: 70px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   background-color: #0c253c;
+
 }
-#options {
+#options{
   display: flex;
   width: 35%;
   height: 100%;
   gap: 5%;
   margin-top: 3px;
   /* text-align: center; */
-  align-items: center;
+
 }
 
-h4 > a,
-li,
-a {
+#options>h4>a{
   text-decoration: none;
   color: white;
   text-align: center;
   font-size: 15px;
+  /* padding-top: 13px; */
 }
-#options a:hover {
+#options>h4{
+  margin-top: 15px;
+}
+#options>h4 a:hover {
   color: #00a4bb;
 }
 
-#options > h4 > a {
-  text-decoration: none;
-  color: white;
-  text-align: center;
-}
-#options > h4 a:hover {
-  color: #00a4bb;
-}
-
-#logooption {
+#logooption{
   width: 35%;
   display: flex;
   /* border: 1px solid wheat; */
   /* text-align: center; */
-}
 
-#logo {
-  margin-left: 15%;
 }
-#logo {
+#logo{
   margin-left: 20%;
+  
 }
-#logo > img {
+#logo>img{
   margin-top: 11%;
   /* padding-left: 5%; */
 }
 /* #logo li{
-    text-align: center;
+  text-align: center;
 } */
-.traveloptions {
+.traveloptions{
   margin: auto;
   color: white;
   list-style-type: none;
   cursor: pointer;
 }
-.traveloptions:hover {
-  color: #00a4bb;
+.traveloptions:hover{
+  color: #007e8f;
 }
-.sub-menu-1 > ul > li > i {
+.sub-menu-1>ul>li>i{
   padding-right: 10px;
 }
 
-.traveloptions {
-  margin: auto;
-}
-.traveloptions > a {
-  text-decoration: none;
-  color: white;
-}
-.sub-menu-1 {
+.sub-menu-1{
   height: 450px;
   width: 350px;
   /* border: black 1px solid; */
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   border-radius: 15px;
   display: none;
+  z-index: 1;
 }
-.sub-menu-1,
-.sub-menu-2 li {
+.sub-menu-1,.sub-menu-2 li{
   color: black;
   /* line-height: 20px; */
+  
 }
-.traveloptions:hover > a {
-  color: #00a4bb;
-}
-
-.sub-menu-1 {
-  height: 420px;
-  width: 350px;
-  /* border: black 1px solid; */
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-  border-radius: 15px;
-  display: none;
-}
-.sub-menu-1 li {
-  color: black;
-  line-height: 20px;
-}
-#logooption li {
+#logooption li{
+  
   list-style-type: none;
 }
 
-#logooption > li:hover .sub-menu-1 {
+
+#logooption>li:hover .sub-menu-1{
+
   display: block;
   position: absolute;
   background-color: #fff;
+  
 }
 
-#logooption > li:hover .sub-menu-1 {
-  display: block;
-  position: absolute;
-  background-color: #fff;
-}
-
-#logooption > li:hover .sub-menu-1 ul {
+#logooption>li:hover .sub-menu-1 ul{
   display: block;
   margin: 10px;
   margin-left: -20px;
   /* color: #557eb0; */
 }
-#logooption > li:hover .sub-menu-1 ul li {
-  width: 150px;
-  padding: 14px;
-  line-height: 20px;
-  cursor: pointer;
+#logooption>li:hover .sub-menu-1 ul li{
+  width: 250px;
+  padding: 14px ;
+   line-height: 20px; 
+   cursor: pointer;
 }
-
 .sub-menu-1 ul li:hover {
-}
 
-#logooption > li:hover .sub-menu-1 ul {
-  display: block;
-  margin: 10px;
-  /* color: #557eb0; */
-}
-#logooption > li:hover .sub-menu-1 ul li {
-  width: 150px;
-  padding: 10px;
-  /* color: #557eb0; */
-  /* margin-top: 50px; */
-  /* padding-top: 30px; */
-  /* line-height: 20px; */
-}
-.sub-menu-1 ul li:hover a {
   color: #007e8f;
 }
-.sub-menu-2 {
+.sub-menu-2{
   height: 350px;
   width: 350px;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   border-radius: 15px;
   display: none;
   margin-left: -22%;
+  z-index: 1;
+}
+.signin{
+  font-size: 15px;
+  margin-top: 10px;
 }
 
-.sub-menu-2 li {
+.sub-menu-2 li{
   list-style-type: none;
+  
 }
 
-.sub-menu-2 h3 {
+.sub-menu-2 h6{
+  margin-top: 35px;
+  margin-bottom: 25px;
   padding: 0 5% 0 5%;
   text-align: start;
   color: black;
 }
-.sub-menu-2 #signup {
+.sub-menu-2 #signup{
   text-align: center;
   /* color: black; */
 }
 
-.sub-menu-2 > #signup,
-ul a {
+.sub-menu-2>#signup, ul a{
   color: #00a4bb;
   cursor: pointer;
-  text-decoration: none;
 }
-.sub-menu-2 #signup a:hover {
+.sub-menu-2 #signup a:hover{
+
   color: #143e44;
 }
-.sub-menu-2 #signin a:hover {
+.sub-menu-2 #signin a:hover{
+
   color: white;
 }
 
@@ -199,40 +155,47 @@ ul a {
   color: gray;
 }
 
-.signin:hover .sub-menu-2 {
+.signin:hover .sub-menu-2{
+
   display: block;
   position: absolute;
   background-color: #fff;
 }
 
-#signin {
+#signin{
   width: 90%;
-  height: 25px;
-  border: 1px solid #c83259;
+  height: 40px;
+  border: 1px solid #C83259;
   text-align: center;
   margin: auto;
   padding-top: 8px;
   border-radius: 5px;
   color: white;
-  background-color: #c83259;
+  background-color: #C83259;
   cursor: pointer;
 }
-#signin a {
+#signin a{
   color: white;
   text-decoration: none;
 }
-#signup a {
+#signup a{
   color: #00a4bb;
   text-decoration: none;
+  font-size: 15px;
 }
 
-.sub-menu-2 li {
+.sub-menu-2 li{
+
   width: 150px;
-  padding: 14px;
-  line-height: 20px;
-  font-weight: lighter;
-  margin-left: -10%;
+  padding: 14px ;
+   line-height: 20px;
+   font-weight: lighter;
+   margin-left: -10%;
+   
+  
 }
-hr {
-  margin-left: -13%;
+.sub-menu-2 a{
+  text-decoration: none;
+
 }
+
