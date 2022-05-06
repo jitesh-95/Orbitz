@@ -11,8 +11,6 @@ import {
 let bookingdiv = document.querySelector(".search_booking");
 // default
 
-bookingdiv.innerHTML = stays();
-
 let staysdiv = document.querySelector("#stays");
 let flightsdiv = document.querySelector("#flights");
 let carsdiv = document.querySelector("#cars");
@@ -20,6 +18,7 @@ let packagesdiv = document.querySelector("#packages");
 let thingsdiv = document.querySelector("#things");
 let cruisesdiv = document.querySelector("#cruises");
 
+bookingdiv.innerHTML = stays();
 staysdiv.style.color = "teal";
 
 // ==================================================
@@ -118,6 +117,31 @@ function cruisefun() {
   //
 }
 cruisesdiv.addEventListener("click", cruisefun);
+
+// ========================================
+// going to modal
+let modal = document.querySelector("#modal");
+let openModal = document.querySelector(".going_to");
+let goingText = document.querySelector("#going_to_text");
+
+openModal.addEventListener("click", () => {
+  modal.showModal();
+});
+
+let closebtn = (e) => {
+  if (e.key === "Enter") {
+    let query = document.getElementById("modal_query").value;
+
+    goingText.innerHTML = null;
+    goingText.innerHTML = query;
+    document.getElementById("modal_query").value = null;
+    modal.close();
+  }
+};
+
+document.querySelector("#modal_query").addEventListener("keydown", closebtn);
+
+// going to place value
 
 // =====================================================
 //country codes
