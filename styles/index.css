@@ -3,6 +3,33 @@
 #megabox {
   background-color: #f5f5f5;
 }
+#help_button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0 20px 30px 0;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  color: teal;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 100;
+}
+#help_button > span {
+  font-size: 15px;
+  font-weight: bold;
+}
+#help_button > p {
+  margin: 0;
+  padding-left: 10px;
+  font-weight: 500;
+}
 #head_box {
   width: 100%;
   position: relative;
@@ -15,7 +42,7 @@
 }
 #inside_white_box {
   width: 90%;
-
+  box-sizing: border-box;
   position: absolute;
   top: 6%;
   left: 5%;
@@ -28,7 +55,6 @@
   margin: auto;
   padding-top: 12px;
   justify-content: center;
-  
 }
 #stays:hover,
 #flights:hover,
@@ -60,7 +86,7 @@
 #input_panels {
   display: flex;
 }
-#going_to {
+.going_to {
   border: 1px solid rgb(170, 168, 168);
   border-radius: 2px;
   color: rgb(94, 92, 92);
@@ -74,7 +100,7 @@
   padding-left: 18px;
   box-sizing: border-box;
 }
-#going_to > span {
+.going_to > span {
   margin-right: 10px;
 }
 .checkin,
@@ -90,16 +116,16 @@
 .checkin > p,
 .checkout > p {
   margin: 2px 0px;
-  font-size: 14px;
+  font-size: 13px;
   color: rgb(94, 92, 92);
 }
-#checkin_input,
-#checkout_input {
+.checkin_input,
+.checkout_input {
   width: 100%;
-  font-size: 18px;
+  font-size: 16px;
   border: none;
 }
-#travel_box {
+.travel_box {
   border: 1px solid rgb(170, 168, 168);
   border-radius: 2px;
   display: flex;
@@ -116,33 +142,33 @@
   padding-left: 10px;
   box-sizing: border-box;
 }
-#travelers {
+.travelers {
   grid-area: a;
   margin: 0;
   text-align: start;
   font-size: 14px;
   color: rgb(94, 92, 92);
 }
-#room {
+.room {
   grid-area: b;
   margin: 0 10px 0 0;
   font-size: 18px;
 }
-#person_count {
+.person_count {
   grid-area: c;
   margin: 0;
   font-size: 18px;
 }
-#checkboxes {
+.checkboxes {
   text-align: start;
   margin-top: 20px;
   margin-bottom: 10px;
   color: rgb(94, 92, 92);
 }
-#addcar {
+.addcar {
   margin-left: 70px;
 }
-#submit {
+.submit {
   padding: 15px 50px;
   font-size: 15px;
   font-weight: bold;
@@ -154,6 +180,158 @@
 
 /* ===================================================== */
 /* flights */
+.flight_first_box {
+  display: flex;
+  justify-content: space-between;
+}
+.booking_types {
+  display: flex;
+  justify-content: space-between;
+}
+.booking_types > p {
+  padding: 10px 25px;
+  margin-right: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.booking_types > p:nth-child(1) {
+  background-color: #b2d8dd;
+}
+.booking_types > p:hover {
+  background-color: #b2d8dd;
+}
+.travelingPerson {
+  margin-left: 20px;
+  border: none;
+  font-size: 13px;
+  color: teal;
+}
+.travelingPerson:focus {
+  border: none;
+}
+.travelingPerson:hover {
+  text-decoration: underline;
+}
+
+.input_panels {
+  display: flex;
+  margin-top: 20px;
+}
+.leaving_from,
+.flight_going_to {
+  border: 1px solid rgb(170, 168, 168);
+  border-radius: 2px;
+  color: rgb(94, 92, 92);
+  height: 50px;
+  width: 42%;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  font-size: 18px;
+  padding-left: 18px;
+  box-sizing: border-box;
+}
+#return {
+  margin-right: 0;
+}
+
+/* ================================================ */
+/* cars  */
+.cars_input_panels {
+  display: grid;
+  grid-template-areas:
+    "a a b b"
+    "c d e f";
+  gap: 10px;
+}
+.cars_input_panels > div:nth-child(1) {
+  grid-area: a;
+  width: 100%;
+}
+.cars_input_panels > div:nth-child(2) {
+  grid-area: b;
+  width: 100%;
+}
+.cars_input_panels > div:nth-child(3) {
+  grid-area: c;
+}
+.cars_input_panels > div:nth-child(4) {
+  grid-area: d;
+}
+.cars_input_panels > div:nth-child(5) {
+  grid-area: e;
+}
+.cars_input_panels > div:nth-child(6) {
+  grid-area: f;
+}
+
+/* =========================================== */
+/* //packages */
+.choose {
+  font-size: 13px;
+  text-align: start;
+}
+#packages_add_buttons > p {
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+/* ========================================== */
+/* things  */
+.things_going_to {
+  width: 56.5%;
+  margin-bottom: 30px;
+}
+.things_going_to + div,
+.things_going_to + div + div {
+  width: 21%;
+}
+.things_going_to + div > input,
+.things_going_to + div + div > input {
+  width: 70%;
+}
+
+/* =============================================== */
+/* cruises */
+.cruise {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.select-destination {
+  border: 1px solid rgb(168, 167, 167);
+  height: 50px;
+  text-align: start;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.select-destination > p {
+  margin: 0;
+  font-size: 13px;
+}
+#cruise_destionation_dropdown {
+  width: 100%;
+  border: none;
+}
+#cruise_destionation_dropdown:focus {
+  border: none;
+}
+#cruise_travel_box {
+  width: 100%;
+  height: 50px;
+}
+.cruise_person_count {
+  margin: 0;
+}
+.cruise_depart {
+  margin-right: 0;
+}
+.cruise_depart > input {
+  width: 25%;
+}
 
 /* =============================================== */
 /* three divs */
@@ -341,6 +519,7 @@
   font-weight: bold;
   color: teal;
   border-radius: 2px;
+  border: 1px solid grey;
 }
 .tips_headings > a > button:hover {
   background-color: rgba(208, 224, 224, 0.986);
@@ -435,7 +614,7 @@
   margin: auto;
   font-family: Poppins;
 
-  margin-bottom: 200px;
+  margin-bottom: 60px;
 }
 #accordian_heading {
   font-weight: bolder;
@@ -448,4 +627,56 @@
 }
 .accordion-header > button {
   font-weight: bolder;
+}
+.accor-body {
+  display: flex;
+  justify-content: space-between;
+}
+.accor_points > a {
+  font-size: 13px;
+  text-decoration: none;
+  color: teal;
+  font-weight: 300;
+}
+.accor_points > a:hover {
+  text-decoration: underline;
+  color: teal;
+}
+
+/* ====================================== */
+/* expedia box  */
+#expedia_group {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(221, 218, 218);
+  padding-bottom: 20px;
+}
+.equal_groups > a {
+  font-size: 12px;
+  text-decoration: none;
+  color: teal;
+  line-height: 30px;
+}
+#help {
+  width: 18%;
+}
+.equal_groups > a:hover {
+  text-decoration: underline;
+  color: teal;
+}
+
+/* =================================== */
+/* footer area  */
+#footer_area {
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 80px;
+  font-size: 12px;
+}
+#footer_area > p {
+  line-height: 10px;
+  color: rgb(102, 101, 101);
 }
