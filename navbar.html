@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Orbitz Hotel Deals, Flights, Cheap Vacations & Rental Cars</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon" >
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/index.css" />
     <link
@@ -88,7 +89,13 @@
     </button>
 
     <div id="megabox">
-      <!-- head box -->
+     
+      <!-- modal -->
+      <dialog  id="modal">
+        <input type="text" id="modal_query" placeholder="Where are you going?">
+      </dialog>
+
+       <!-- head box -->
       <div id="head_box">
         <img src="./images/head_background.png" alt="" />
         <div id="inside_white_box">
@@ -103,7 +110,7 @@
 
           <div class="search_booking"></div>
         </div>
-      </div>
+        
 
       <!-- three divs -->
       <div id="threedivs">

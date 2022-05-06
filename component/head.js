@@ -2,7 +2,8 @@ function stays() {
   return `
         <div id="input_panels">
             <div class="going_to">
-              <span class="material-symbols-outlined"> pin_drop </span>Going to
+              <span class="material-symbols-outlined"> pin_drop </span>
+            <p id="going_to_text">Going to</p>
             </div>
             <div class="checkin">
               <p>Check-in</p>
