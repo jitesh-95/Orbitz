@@ -1,6 +1,17 @@
-import { stays, countryCodes } from "../component/head.js";
+import {
+  stays,
+  flights,
+  cars,
+  packages,
+  things,
+  cruises,
+  countryCodes,
+} from "../component/head.js";
+
 let bookingdiv = document.querySelector(".search_booking");
-// bookingdiv.innerHTML = stays();
+// default
+
+bookingdiv.innerHTML = stays();
 
 let staysdiv = document.querySelector("#stays");
 let flightsdiv = document.querySelector("#flights");
@@ -10,18 +21,109 @@ let thingsdiv = document.querySelector("#things");
 let cruisesdiv = document.querySelector("#cruises");
 
 staysdiv.style.color = "teal";
-staysdiv.style.borderBottom = "teal";
 
+// ==================================================
+//stays
 function staysfun() {
+  bookingdiv.innerHTML = null;
   bookingdiv.innerHTML = stays();
+  //
   staysdiv.style.color = "teal";
-  staysdiv.style.borderBottom = "teal";
+  //
+  flightsdiv.style.color = "grey";
+  carsdiv.style.color = "grey";
+  packagesdiv.style.color = "grey";
+  thingsdiv.style.color = "grey";
+  cruisesdiv.style.color = "grey";
 }
-document.querySelector("#stays").addEventListener("click", staysfun);
+staysdiv.addEventListener("click", staysfun);
 
+// ===================================================
+//flights
+function flightsfun() {
+  bookingdiv.innerHTML = null;
+  bookingdiv.innerHTML = flights();
+  staysdiv.style.color = "grey";
+  //
+  flightsdiv.style.color = "teal";
+  //
+  carsdiv.style.color = "grey";
+  packagesdiv.style.color = "grey";
+  thingsdiv.style.color = "grey";
+  cruisesdiv.style.color = "grey";
+}
+flightsdiv.addEventListener("click", flightsfun);
+
+// ===================================================
+//cars
+function carsfun() {
+  bookingdiv.innerHTML = null;
+  bookingdiv.innerHTML = cars();
+  staysdiv.style.color = "grey";
+  flightsdiv.style.color = "grey";
+  //
+  carsdiv.style.color = "teal";
+  //
+  packagesdiv.style.color = "grey";
+  thingsdiv.style.color = "grey";
+  cruisesdiv.style.color = "grey";
+}
+
+carsdiv.addEventListener("click", carsfun);
+
+// ===================================================
+// packages
+function packagefun() {
+  bookingdiv.innerHTML = null;
+  bookingdiv.innerHTML = packages();
+  staysdiv.style.color = "grey";
+  flightsdiv.style.color = "grey";
+  carsdiv.style.color = "grey";
+  //
+  packagesdiv.style.color = "teal";
+  //
+  thingsdiv.style.color = "grey";
+  cruisesdiv.style.color = "grey";
+}
+packagesdiv.addEventListener("click", packagefun);
+
+// ===================================================
+// things to do
+function thingsfun() {
+  bookingdiv.innerHTML = null;
+  bookingdiv.innerHTML = things();
+  staysdiv.style.color = "grey";
+  flightsdiv.style.color = "grey";
+  carsdiv.style.color = "grey";
+  packagesdiv.style.color = "grey";
+  //
+  thingsdiv.style.color = "teal";
+  //
+  cruisesdiv.style.color = "grey";
+}
+thingsdiv.addEventListener("click", thingsfun);
+
+// ====================================================
+// cruises
+function cruisefun() {
+  bookingdiv.innerHTML = null;
+  bookingdiv.innerHTML = cruises();
+  staysdiv.style.color = "grey";
+  flightsdiv.style.color = "grey";
+  carsdiv.style.color = "grey";
+  packagesdiv.style.color = "grey";
+  thingsdiv.style.color = "grey";
+  //
+  cruisesdiv.style.color = "teal";
+  //
+}
+cruisesdiv.addEventListener("click", cruisefun);
+
+// =====================================================
 //country codes
 document.querySelector("#country_codes").innerHTML = countryCodes();
 
+// ======================================================
 //get the app
 let alerttag = document.querySelector("#alert");
 

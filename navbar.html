@@ -81,6 +81,12 @@
       </div>
     </div>
 
+    <!-- right corner button  -->
+    <button id="help_button">
+      <span class="material-symbols-outlined"> forum </span>
+      <p>Help</p>
+    </button>
+
     <div id="megabox">
       <!-- head box -->
       <div id="head_box">
@@ -94,6 +100,7 @@
             <h4 id="things">Things to do</h4>
             <h4 id="cruises">Cruises</h4>
           </div>
+
           <div class="search_booking"></div>
         </div>
       </div>
@@ -264,7 +271,7 @@
           <h4>Text yourself a download link</h4>
           <select id="country_codes"></select>
           <input type="number" id="app_number" placeholder="Phone Number" />
-          <button id="submit" class="get_the_app">Get the app</button>
+          <button class="submit get_the_app">Get the app</button>
           <p id="alert"></p>
           <p id="message">
             By providing your number, you agree to receive a one-time automated
@@ -288,6 +295,7 @@
           class="accordion accordion-flush accor_all_boxes"
           id="accordionFlushExample"
         >
+          <!-- one  -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
               <button
@@ -307,14 +315,24 @@
               aria-labelledby="flush-headingOne"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                first item's accordion body.
+              <div class="accordion-body accor-body">
+                <div class="accor_points">
+                  <a href="">Flights Under $200</a> <br />
+                  <a href="">Travel Deals</a> <br />
+                  <a href="">Hotels Under $100</a> <br />
+                  <a href="">Orbitz Hotel Coupon</a> <br />
+                  <a href="">All our Destinations</a><br />
+                </div>
+                <div class="accor_points">
+                  <a href="">Orbitz Coupons</a> <br />
+                  <a href="">Car Rental Deals</a> <br />
+                  <a href="">Vacation Package Deals</a> <br />
+                  <a href="">Last Minute Travel Deals</a><br />
+                </div>
               </div>
             </div>
           </div>
-
+          <!-- two -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingTwo">
               <button
@@ -334,15 +352,21 @@
               aria-labelledby="flush-headingTwo"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                second item's accordion body. Let's imagine this being filled
-                with some actual content.
+              <div class="accordion-body accor-body">
+                <div class="accor_points">
+                  <a href="">Atlantic City hotels</a> <br />
+                  <a href="">Lahaina hotels</a> <br />
+                  <a href="">San Diego hotels</a> <br />
+                </div>
+                <div class="accor_points">
+                  <a href="">Honolulu hotels</a> <br />
+                  <a href="">Myrtle Beach hotels</a> <br />
+                  <a href="">Virginia Beach hotels</a> <br />
+                </div>
               </div>
             </div>
           </div>
-
+          <!-- three  -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingThree">
               <button
@@ -362,17 +386,25 @@
               aria-labelledby="flush-headingThree"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                third item's accordion body. Nothing more exciting happening
-                here in terms of content, but just filling up the space to make
-                it look, at least at first glance, a bit more representative of
-                how this would look in a real-world application.
+              <div class="accordion-body accor-body">
+                <div class="accor_points">
+                  <a href="">Austin hotels</a> <br />
+                  <a href="">Dallas hotels</a> <br />
+                  <a href="">Houston hotels</a> <br />
+                  <a href="">Las Vegas hotels</a> <br />
+                  <a href="">New Orleans hotels</a><br />
+                </div>
+                <div class="accor_points">
+                  <a href="">Chicago hotels</a> <br />
+                  <a href="">Denver hotels</a> <br />
+                  <a href="">Scottsdale hotels</a> <br />
+                  <a href="">Nashville hotels</a><br />
+                  <a href="">Phoenix hotels</a><br />
+                </div>
               </div>
             </div>
           </div>
-
+          <!-- four  -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingFour">
               <button
@@ -392,14 +424,30 @@
               aria-labelledby="flush-headingFour"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                first item's accordion body.
+              <div class="accordion-body accor-body">
+                <div class="accor_points">
+                  <a href="">Caribbean Vacations</a> <br />
+                  <a href="">Mexico Vacations</a> <br />
+                  <a href="">New York Vacations</a> <br />
+                  <a href="">Las Vegas Vacations</a> <br />
+                  <a href="">Disneyland Packages</a><br />
+                  <a href="">Costa Rica Vacations</a><br />
+                  <a href="">Orlando Vacations</a><br />
+                  <a href="">Colorado Vacations</a><br />
+                </div>
+                <div class="accor_points">
+                  <a href="">Hawaii Vacations</a> <br />
+                  <a href="">Miami Vacations</a> <br />
+                  <a href="">Punta Cuna Vacations</a> <br />
+                  <a href="">Cancun Vacations</a><br />
+                  <a href="">Florida Vacations</a><br />
+                  <a href="">Key West Vacations</a><br />
+                  <a href="">Grand Canyon Vacations</a><br />
+                </div>
               </div>
             </div>
           </div>
-
+          <!-- five  -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingFive">
               <button
@@ -419,17 +467,29 @@
               aria-labelledby="flush-headingFive"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                third item's accordion body. Nothing more exciting happening
-                here in terms of content, but just filling up the space to make
-                it look, at least at first glance, a bit more representative of
-                how this would look in a real-world application.
+              <div class="accordion-body accor-body">
+                <div class="accor_points">
+                  <a href="">Flights To Las Vegas</a> <br />
+                  <a href="">Flights To Los Angeles</a> <br />
+                  <a href="">Flights To San Diego</a> <br />
+                  <a href="">Flights to Denver</a> <br />
+                  <a href="">Flights to Washington</a><br />
+                  <a href="">Flights To Minneapolis St.Paul</a><br />
+                  <a href="">Flights To Atlantic City</a><br />
+                </div>
+                <div class="accor_points">
+                  <a href="">Flights To New York</a> <br />
+                  <a href="">Flights To Chicago</a> <br />
+                  <a href="">Flights To Seattle</a> <br />
+                  <a href="">Flights To San Francisco</a><br />
+                  <a href="">Flights To Boston</a><br />
+                  <a href="">Flights To Salt Lake City</a><br />
+                  <a href="">Flights To Reno</a><br />
+                </div>
               </div>
             </div>
           </div>
-
+          <!-- six  -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingSix">
               <button
@@ -449,17 +509,159 @@
               aria-labelledby="flush-headingSix"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                third item's accordion body. Nothing more exciting happening
-                here in terms of content, but just filling up the space to make
-                it look, at least at first glance, a bit more representative of
-                how this would look in a real-world application.
+              <div class="accordion-body accor-body">
+                <div class="accor_points">
+                  <a href="">Car rental in Atlanta</a> <br />
+                  <a href="">Car rental in Chicago</a> <br />
+                  <a href="">Car rental in Dallas</a> <br />
+                  <a href="">Car rental in Detroit</a> <br />
+                  <a href="">Car rental in Las Vegas</a><br />
+                  <a href="">Car rental in New Orleans</a><br />
+                  <a href="">Car rental in Orlando</a><br />
+                  <a href="">Car rental in Philadelphia</a><br />
+                  <a href="">Car rental in Tampa</a><br />
+                </div>
+                <div class="accor_points">
+                  <a href="">Car rental in Boston</a> <br />
+                  <a href="">Car rental in Cincinnati</a> <br />
+                  <a href="">Car rental in Denver</a> <br />
+                  <a href="">Car rental in Houston</a><br />
+                  <a href="">Car rental in Miami</a><br />
+                  <a href="">Car rental in New York City</a><br />
+                  <a href="">Car rental in Palm Springs</a><br />
+                  <a href="">Car rental in San Diego</a><br />
+                  <a href="">Car rental in Washington DC</a><br />
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- expedia box -->
+      <div id="expedia_group">
+        <a href="https://www.expediagroup.com/home/default.aspx" target="_blank"
+          ><img src="./images/expedia.svg" alt=""
+        /></a>
+
+        <div id="company" class="equal_groups">
+          <h6>Company</h6>
+          <a href="https://www.orbitz.com/lp/b/about" target="_blank">About</a>
+          <br />
+          <a href="https://lifeatexpediagroup.com/" target="_blank">Jobs</a
+          ><br />
+          <a
+            href="https://welcome.expediagroup.com/en/about-us/join-orbitz"
+            target="_blank"
+            >List your property</a
+          ><br />
+          <a href="https://www.expediagroup.com/partnerships/" target="_blank"
+            >Partnerships</a
+          ><br />
+          <a href="">Newsroom</a><br />
+          <a href="">Investor Relations</a><br />
+          <a href="">Site Map</a><br />
+          <a href="">Orbitz Rewards</a><br />
+          <a href="">Advertising</a><br />
+        </div>
+
+        <div id="explore" class="equal_groups">
+          <h6>Explore</h6>
+          <a
+            href="https://www.orbitz.com/Destinations-In-United-States-Of-America.d201.Hotel-Destinations"
+            target="_blank"
+          >
+            Hotels in United States</a
+          ><br />
+          <a
+            href="https://www.orbitz.com/Destinations-In-United-States-Of-America.d201.Vacation-Rental-Destinations"
+            target="_blank"
+          >
+            Vacation Rentals in United States</a
+          ><br />
+          <a
+            href="https://www.orbitz.com/Destinations-In-United-States-Of-America.d201.Car-Rental-Destinations"
+            target="_blank"
+          >
+            Car Rentals in United States</a
+          ><br />
+          <a
+            href="https://www.orbitz.com/Destinations-In-United-States-Of-America.d201.Flight-Destinations"
+            target="_blank"
+          >
+            Domestic Flights</a
+          ><br />
+          <a
+            href="https://www.orbitz.com/United-States-Of-America.d201.Destination-Travel-Guides"
+            target="_blank"
+          >
+            Vacation Packages in United States</a
+          ><br />
+          <a href="https://www.orbitz.com/reviews/"> Orbitz Reviews</a><br />
+          <a href=""> Orbitz Coupons</a><br />
+          <a href=""> LGBTQ Travel</a><br />
+          <a href=""> Unique Accommodations</a><br />
+          <a href=""> Travel Blog</a><br />
+        </div>
+
+        <div id="policies" class="equal_groups">
+          <h6>Policies</h6>
+          <a href="https://www.orbitz.com/lp/lg-privacy" target="_blank">
+            Privacy Policy</a
+          ><br />
+          <a href="https://www.orbitz.com/lp/lg-terms" target="_blank">
+            Terms of Use</a
+          ><br />
+          <a
+            href="https://www.vrbo.com/legal/terms-and-conditions"
+            target="_blank"
+          >
+            Vrbo terms and conditions</a
+          ><br />
+          <a href="https://www.orbitz.com/rewards/terms" target="_blank">
+            Orbitz Rewards Terms</a
+          ><br />
+          <a href="https://www.orbitz.com/dnsmpi" target="_blank">
+            Do not sell my personal information</a
+          ><br />
+        </div>
+
+        <div id="help" class="equal_groups">
+          <h6>Help</h6>
+          <a href="https://www.orbitz.com/service/" target="_blank">Support</a
+          ><br />
+          <a
+            href="https://www.orbitz.com/service/#/articles/560/34/16267"
+            target="_blank"
+            >Cancel your hotel or vacation rental booking</a
+          ><br />
+          <a
+            href="https://www.orbitz.com/service/#/articles/569/34/16477"
+            target="_blank"
+            >Cancel your flight</a
+          ><br />
+          <a
+            href="https://www.orbitz.com/service/#/myTrips/16138"
+            target="_blank"
+            >Refund timelines, policies & processes</a
+          ><br />
+          <a
+            href="https://www.orbitz.com/service/#/article/19518"
+            target="_blank"
+            >Use an Orbitz Coupon</a
+          ><br />
+        </div>
+      </div>
+
+      <!-- footer  -->
+      <div id="footer_area">
+        <p>
+          © 2022 Orbitz, LLC, an Expedia Group Company. All rights reserved.
+        </p>
+        <p>
+          Orbitz, Orbitz.com, and the Orbitz logo are trademarks or registered
+          trademarks of Orbitz, LLC. CST# 2083930-50.
+        </p>
       </div>
     </div>
   </body>
