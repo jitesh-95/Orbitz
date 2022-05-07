@@ -133,9 +133,14 @@ let closebtn = (e) => {
     let query = document.getElementById("modal_query").value;
 
     goingText.innerHTML = null;
+    if (query === "") {
+      goingText.innerHTML = "Going to";
+      document.getElementById("modal_query").value = null;
+      return modal.close();
+    }
     goingText.innerHTML = query;
     document.getElementById("modal_query").value = null;
-    modal.close();
+    return modal.close();
   }
 };
 
