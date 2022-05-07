@@ -1,5 +1,5 @@
 
-let count=0
+
 
 let clickbox= ()=>{
     let tick= document.getElementById("checkbox").checked
@@ -36,7 +36,7 @@ let clickbox= ()=>{
             }
             if(flag==false){
                 alert("Sign in successful")
-                window.location.href= "./index.html"
+                window.location.href= "./navbar.html"
             }
             else if(click== false){
                 alert("Please click on checkbox")
