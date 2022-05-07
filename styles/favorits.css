@@ -1,0 +1,32 @@
+
+
+body{
+    color: #f5f5f5;
+}
+#save_searchitems{
+    height: 50px;
+    width: 50%;
+    box-shadow: rgba(26, 25, 25, 0.1) 0px 1px 2px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    color: black;
+}
+#wish_div{
+    width: 50%;
+    height: 250px;
+    /* border: 1px solid black; */
+    margin: auto;
+    color: black;
+    text-align: center;
+
+}
+#wish_div>p{
+    padding: 0 25% 0 25%;
+    color: gray;
+}
+#wish_div>i{
+    color: gray;
+    margin-top: 5%;
+    font-size: 30px;
+}

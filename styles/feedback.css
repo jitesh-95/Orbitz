@@ -1,0 +1,137 @@
+.nav{
+    width: 100%;
+    height: 70px;
+    border: 1px solid black;
+    background-color: #0b2339;
+    margin-bottom: 20px;
+    margin-top: -8px;
+}
+.nav>img{
+    width: 10%;
+    height: 100%;
+    margin-left: 29%;
+}
+
+#feedback{
+    margin: auto;
+    width: 42%;
+    height: auto;
+    text-align: start;
+}
+span{
+    
+    font-weight: bolder;
+    color: gray;
+}
+p{
+    color: gray;
+    margin-top: -2px;
+}
+#feedback>p{
+    margin-bottom: 25px;
+}
+#feedback>span>span{
+    color: red;
+}
+#rating_div{
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 5px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+#rating_div p{
+    font-weight: bold;
+
+}
+#rating_div span{
+    color: black;
+}
+.p_tag_size{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#rating_div>div{
+    width: 15%;
+    height: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+#rating_div>div> i{
+    margin-top: 15px;
+    font-size: 10px;
+}
+#rating_div>div:hover {
+    color: white;
+    background-color: gray;
+}
+#rating_div>div:hover span{
+    color: white;
+}
+#reomendation{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 5px;
+    margin-bottom: 25px;
+
+}
+#reomendation> div{
+    width: 7%;
+    height: 100%;
+    border: 1px solid gray;
+    text-align: center;
+    border-radius: 5px;
+}
+#reomendation> div p{
+    margin-top: 10px;
+}
+
+#reomendation> div:hover{
+    background-color: gray;
+    color: white;
+}
+#reomendation> div:hover p{
+    color: white;
+}
+#comments{
+    
+    width: 95%;
+    height: 150px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    border-radius: 7px;
+    border: 1px solid gray;
+}
+#email{
+    width: 95%;
+    height: 40px;
+    border-radius: 10px;
+    border-color: gray;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+#feedback>#button{
+    width: 80px;
+    height: 50px;
+    /* border: 1px solid #c83259; */
+    margin: auto;
+    border-radius: 10px;
+    
+}
+#button>button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: #c83259;
+    color: white;
+    font-size: 17px;
+}

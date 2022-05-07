@@ -1,0 +1,57 @@
+let footer_div= ()=>{
+    return `
+    <div id="footer">
+        <div>
+            <img src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg" alt="">
+        </div>
+        <div>
+            <h4>Company</h4>
+            <p><a href="">About</a></p>
+            <p><a href="">Jobs</a></p>
+            <p><a href="">List your property</a></p>
+            <p><a href="">Partnerships</a></p>
+            <p><a href="">Newsroom</a></p>
+            <p><a href="">Investor Relations</a></p>
+            <p><a href="">Site Map</a></p>
+            <p><a href="">Orbitz Rewards</a></p>
+            <p><a href="">Advertising</a></p>
+        </div>
+        <div>
+            <h4>Explore</h4>
+            <p><a href="">Hotels in United States</a></p>
+            <p><a href="">Vacation Rentals in United States</a></p>
+            <p><a href="">Car Rentals in United States</a></p>
+            <p><a href="">Domestic Flights</a></p>
+            <p><a href="">Vacation Packages in United States</a></p>
+            <p><a href="">Orbitz Reviews</a></p>
+            <p><a href="">Orbitz Coupons</a></p>
+            <p><a href="">LGBTQ Travel</a></p>
+            <p><a href="">Unique Accommodations</a></p>
+            <p><a href="">Travel Blog</a></p>
+        </div>
+        <div>
+            <h4>Policies</h4>
+            <p><a href="">Privacy Policy</a></p>
+            <p><a href="">Terms of Use</a></p>
+            <p><a href="">Vrbo terms and conditions</a></p>
+            <p><a href="">Orbitz Rewards Terms</a></p>
+            <p><a href="">Do not sell my personal information</a></p>
+        </div>
+        <div>
+            <h4>Help</h4>
+            <p><a href="">Support</a></p>
+            <p><a href="">Cancel your hotel or vacation rental booking</a></p>
+            <p><a href="">Cancel your flight</a></p>
+            <p><a href="">Refund timelines, policies & processes</a></p>
+            <p><a href="">Use an Orbitz Coupon</a></p>
+        </div>
+    </div>
+    <hr>
+    <div id="last_line">
+        <p>© 2022 Orbitz, LLC, an Expedia Group Company. All rights reserved. </p>
+        <p>  Orbitz, Orbitz.com, and the Orbitz logo are trademarks or registered trademarks of Orbitz, LLC. CST# 2083930-50.</p>
+    </div>
+        `
+}
+
+export {footer_div}

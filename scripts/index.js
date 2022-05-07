@@ -38,3 +38,5 @@ function getApp() {
   }
 }
 document.querySelector(".get_the_app").addEventListener("click", getApp);
+
+
