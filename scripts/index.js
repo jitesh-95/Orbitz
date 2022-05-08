@@ -6,6 +6,8 @@ import {
   things,
   cruises,
   countryCodes,
+  expedia,
+  footerpart,
 } from "../component/head.js";
 
 let bookingdiv = document.querySelector(".search_booking");
@@ -169,3 +171,9 @@ function getApp() {
   }
 }
 document.querySelector(".get_the_app").addEventListener("click", getApp);
+
+//experdia group
+document.querySelector("#expedia_group").innerHTML = expedia();
+
+//footer part
+document.querySelector("#footer_area").innerHTML = footerpart();
