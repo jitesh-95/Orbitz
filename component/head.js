@@ -404,4 +404,144 @@ function countryCodes() {
         `;
 }
 
-export { stays, flights, cars, packages, things, cruises, countryCodes };
+// expedia group
+function expedia() {
+  return `
+        <a href="https://www.expediagroup.com/home/default.aspx" target="_blank"
+          ><img src="./images/expedia.svg" alt=""
+        /></a>
+
+        <div id="company" class="equal_groups">
+          <h6>Company</h6>
+          <a href="https://www.orbitz.com/lp/b/about" target="_blank">About</a>
+          <br />
+          <a href="https://lifeatexpediagroup.com/" target="_blank">Jobs</a
+          ><br />
+          <a
+            href="https://welcome.expediagroup.com/en/about-us/join-orbitz"
+            target="_blank"
+            >List your property</a
+          ><br />
+          <a href="https://www.expediagroup.com/partnerships/" target="_blank"
+            >Partnerships</a
+          ><br />
+          <a href="">Newsroom</a><br />
+          <a href="">Investor Relations</a><br />
+          <a href="">Site Map</a><br />
+          <a href="">Orbitz Rewards</a><br />
+          <a href="">Advertising</a><br />
+        </div>
+
+        <div id="explore" class="equal_groups">
+          <h6>Explore</h6>
+          <a
+            href="https://www.orbitz.com/Destinations-In-United-States-Of-America.d201.Hotel-Destinations"
+            target="_blank"
+          >
+            Hotels in United States</a
+          ><br />
+          <a
+            href="https://www.orbitz.com/Destinations-In-United-States-Of-America.d201.Vacation-Rental-Destinations"
+            target="_blank"
+          >
+            Vacation Rentals in United States</a
+          ><br />
+          <a
+            href="https://www.orbitz.com/Destinations-In-United-States-Of-America.d201.Car-Rental-Destinations"
+            target="_blank"
+          >
+            Car Rentals in United States</a
+          ><br />
+          <a
+            href="https://www.orbitz.com/Destinations-In-United-States-Of-America.d201.Flight-Destinations"
+            target="_blank"
+          >
+            Domestic Flights</a
+          ><br />
+          <a
+            href="https://www.orbitz.com/United-States-Of-America.d201.Destination-Travel-Guides"
+            target="_blank"
+          >
+            Vacation Packages in United States</a
+          ><br />
+          <a href="https://www.orbitz.com/reviews/"> Orbitz Reviews</a><br />
+          <a href=""> Orbitz Coupons</a><br />
+          <a href=""> LGBTQ Travel</a><br />
+          <a href=""> Unique Accommodations</a><br />
+          <a href=""> Travel Blog</a><br />
+        </div>
+
+        <div id="policies" class="equal_groups">
+          <h6>Policies</h6>
+          <a href="https://www.orbitz.com/lp/lg-privacy" target="_blank">
+            Privacy Policy</a
+          ><br />
+          <a href="https://www.orbitz.com/lp/lg-terms" target="_blank">
+            Terms of Use</a
+          ><br />
+          <a
+            href="https://www.vrbo.com/legal/terms-and-conditions"
+            target="_blank"
+          >
+            Vrbo terms and conditions</a
+          ><br />
+          <a href="https://www.orbitz.com/rewards/terms" target="_blank">
+            Orbitz Rewards Terms</a
+          ><br />
+          <a href="https://www.orbitz.com/dnsmpi" target="_blank">
+            Do not sell my personal information</a
+          ><br />
+        </div>
+
+        <div id="help" class="equal_groups">
+          <h6>Help</h6>
+          <a href="https://www.orbitz.com/service/" target="_blank">Support</a
+          ><br />
+          <a
+            href="https://www.orbitz.com/service/#/articles/560/34/16267"
+            target="_blank"
+            >Cancel your hotel or vacation rental booking</a
+          ><br />
+          <a
+            href="https://www.orbitz.com/service/#/articles/569/34/16477"
+            target="_blank"
+            >Cancel your flight</a
+          ><br />
+          <a
+            href="https://www.orbitz.com/service/#/myTrips/16138"
+            target="_blank"
+            >Refund timelines, policies & processes</a
+          ><br />
+          <a
+            href="https://www.orbitz.com/service/#/article/19518"
+            target="_blank"
+            >Use an Orbitz Coupon</a
+          ><br />
+        </div>
+  `;
+}
+
+// footer part
+function footerpart() {
+  return `
+        <p>
+          © 2022 Orbitz, LLC, an Expedia Group Company. All rights reserved.
+        </p>
+        <p>
+          Orbitz, Orbitz.com, and the Orbitz logo are trademarks or registered
+          trademarks of Orbitz, LLC. CST# 2083930-50.
+        </p>
+  `;
+}
+
+export {
+  stays,
+  flights,
+  cars,
+  packages,
+  things,
+  expedia,
+  cruises,
+  countryCodes,
+  footerpart,
+};
