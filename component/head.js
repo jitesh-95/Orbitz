@@ -1,32 +1,245 @@
 function stays() {
   return `
         <div id="input_panels">
-            <div id="going_to">
-              <span class="material-symbols-outlined"> pin_drop </span>Going to
+            <div class="going_to">
+              <span class="material-symbols-outlined"> pin_drop </span>
+            <p id="going_to_text">Going to</p>
             </div>
             <div class="checkin">
               <p>Check-in</p>
-              <input type="date" id="checkin_input" />
+              <input type="date" class="checkin_input" />
             </div>
             <div class="checkout">
               <p>Check-out</p>
-              <input type="date" id="checkout_input" />
+              <input type="date" class="checkout_input" />
             </div>
-            <div id="travel_box">
+            <div class="travel_box">
               <span class="material-symbols-outlined">person</span>
               <div class="travel_count_div">
-                <p id="travelers">Travelers</p>
-                <p id="room">1 room,</p>
-                <p id="person_count">2 Travelers</p>
+                <p class="travelers">Travelers</p>
+                <p class="room">1 room,</p>
+                <p class="person_count">2 Travelers</p>
               </div>
             </div>
         </div>
-        <div id="checkboxes">
-            <input type="checkbox" id="addflight" /> Add a flight
-            <input type="checkbox" id="addcar" /> Add a car
+        <div class="checkboxes">
+            <input type="checkbox" class="addflight" /> Add a flight
+            <input type="checkbox" class="addcar" /> Add a car
         </div>
-        <button id="submit">Search</button>
+        <button class="submit second_page">Search</button>
         `;
+}
+
+function flights() {
+  return `
+			<div class="flight_first_box">
+              <div class="booking_types">
+                <p>Roundtrip</p>
+                <p>One-way</p>
+                <p>Multicity</p>
+              </div>
+              <div class="booking_types">
+                <select class="travelingPerson">
+                  <option>1 traveler</option>
+                </select>
+                <select class="travelingPerson">
+                  <option>Economy</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="input_panels">
+              <div class="leaving_from">
+                <span class="material-symbols-outlined"> pin_drop </span>Leaving
+                from
+              </div>
+              <div class="flight_going_to">
+                <span class="material-symbols-outlined"> pin_drop </span>
+                Going to
+              </div>
+              <div class="checkin">
+                <p>Departing</p>
+                <input type="date" class="checkin_input" />
+              </div>
+              <div class="checkout" id="return">
+                <p>Returning</p>
+                <input type="date" class="checkout_input" />
+              </div>
+            </div>
+
+            <div class="checkboxes">
+              <input type="checkbox" class="addflight" /> Add a place to stay
+              <input type="checkbox" class="addcar" /> Add a car
+            </div>
+            <button class="submit">Search</button>
+	`;
+}
+
+function cars() {
+  return `
+			<div class="flight_first_box">
+              <div class="booking_types">
+                <p>Rental cars</p>
+                <p>Airport tranportation</p>
+              </div>
+            </div>
+
+            <div class="cars_input_panels">
+              <div class="leaving_from">
+                <span class="material-symbols-outlined"> pin_drop </span>Pick-up
+              </div>
+              <div class="flight_going_to">
+                <span class="material-symbols-outlined"> pin_drop </span>
+                Same as pick-up
+              </div>
+              <div class="checkin">
+                <p>Pick-up date</p>
+                <input type="date" class="checkin_input" />
+              </div>
+              <div class="checkout" id="return">
+                <p>Drop-of date</p>
+                <input type="date" class="checkout_input" />
+              </div>
+              <div class="checkin">
+                <p>Pick-up time</p>
+                <input type="time" class="checkin_input" />
+              </div>
+              <div class="checkout" id="return">
+                <p>Drop-of time</p>
+                <input type="time" class="checkout_input" />
+              </div>
+            </div>
+
+            <div class="checkboxes">
+              <input type="checkbox" class="addflight" /> Include AARP member
+              rates
+            </div>
+            <button class="submit">Search</button>`;
+}
+
+function packages() {
+  return `
+			<p class="choose">Choose two or more items and save on your trip:</p>
+
+            <div class="flight_first_box">
+              <div class="booking_types" id="packages_add_buttons">
+                <p>Stay added</p>
+                <p>Flight added</p>
+                <p>Add a car</p>
+              </div>
+              <div class="booking_types">
+                <select class="travelingPerson">
+                  <option>1 room, 2 traveler</option>
+                </select>
+                <select class="travelingPerson">
+                  <option>Economy</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="input_panels">
+              <div class="leaving_from">
+                <span class="material-symbols-outlined"> pin_drop </span>Leaving
+                from
+              </div>
+              <div class="flight_going_to">
+                <span class="material-symbols-outlined"> pin_drop </span>
+                Going to
+              </div>
+              <div class="checkin">
+                <p>Departing</p>
+                <input type="date" class="checkin_input" />
+              </div>
+              <div class="checkout" id="return">
+                <p>Returning</p>
+                <input type="date" class="checkout_input" />
+              </div>
+            </div>
+
+            <div class="checkboxes">
+              <input type="checkbox" class="addflight" /> I only need
+              accommodations for part of my trip
+            </div>
+            <button class="submit">Search</button>
+			`;
+}
+
+function things() {
+  return `
+			<div id="input_panels">
+              <div class="going_to things_going_to">
+                <span class="material-symbols-outlined"> pin_drop </span>Things
+                to do
+              </div>
+              <div class="checkin">
+                <p>From</p>
+                <input type="date" class="checkin_input" />
+              </div>
+              <div class="checkout">
+                <p>To</p>
+                <input type="date" class="checkout_input" />
+              </div>
+		  	</div>
+            <button class="submit">Search</button>
+			`;
+}
+
+function cruises() {
+  return `
+			<p class="choose">
+              Choose two or more items and save on your trip:
+            </p>
+
+            <div class="cruise">
+              <div class="select-destination">
+                <p>Going to</p>
+                <select id="cruise_destionation_dropdown">
+                  <option>Select destination</option>
+                  <optgroup label="Most Popular">
+                    <option>Caribbean</option>
+                    <option>Bahamas</option>
+                    <option>Mexico</option>
+                    <option>Alaska</option>
+                    <option>Europe</option>
+                    <option>Bermuda</option>
+                    <option>Hawaii</option>
+                  </optgroup>
+                  <optgroup label="Other Destination">
+                    <option>Arctic / Antarctic</option>
+                    <option>Middle East</option>
+                    <option>Africa</option>
+                    <option>Panama Canal</option>
+                    <option>Asia</option>
+                    <option>Pacific Coastal</option>
+                    <option>Australia / New Zealand</option>
+                    <option>Central America</option>
+                    <option>Galapagos</option>
+                    <option>Getaway at Sea</option>
+                    <option>World Cruise</option>
+                  </optgroup>
+                </select>
+              </div>
+
+              <div class="travel_box" id="cruise_travel_box">
+                <span class="material-symbols-outlined">person</span>
+                <div class="travel_count_div">
+                  <p class="travelers">Travelers in the cabin</p>
+                  <p class="cruise_person_count">2 Travelers</p>
+                </div>
+              </div>
+
+              <div class="checkin cruise_depart">
+                <p>Departs as early as</p>
+                <input type="date" class="checkin_input" />
+              </div>
+              <div class="checkout cruise_depart">
+                <p>Departs as late as</p>
+                <input type="date" class="checkout_input" />
+              </div>
+            </div>
+
+            <button class="submit">Search</button>
+			`;
 }
 
 // country codes
@@ -191,4 +404,144 @@ function countryCodes() {
         `;
 }
 
-export { stays, countryCodes };
+// expedia group
+function expedia() {
+  return `
+        <a href="https://www.expediagroup.com/home/default.aspx" target="_blank"
+          ><img src="./images/expedia.svg" alt=""
+        /></a>
+
+        <div id="company" class="equal_groups">
+          <h6>Company</h6>
+          <a href="https://www.orbitz.com/lp/b/about" target="_blank">About</a>
+          <br />
+          <a href="https://lifeatexpediagroup.com/" target="_blank">Jobs</a
+          ><br />
+          <a
+            href="https://welcome.expediagroup.com/en/about-us/join-orbitz"
+            target="_blank"
+            >List your property</a
+          ><br />
+          <a href="https://www.expediagroup.com/partnerships/" target="_blank"
+            >Partnerships</a
+          ><br />
+          <a href="">Newsroom</a><br />
+          <a href="">Investor Relations</a><br />
+          <a href="">Site Map</a><br />
+          <a href="">Orbitz Rewards</a><br />
+          <a href="">Advertising</a><br />
+        </div>
+
+        <div id="explore" class="equal_groups">
+          <h6>Explore</h6>
+          <a
+            href="https://www.orbitz.com/Destinations-In-United-States-Of-America.d201.Hotel-Destinations"
+            target="_blank"
+          >
+            Hotels in United States</a
+          ><br />
+          <a
+            href="https://www.orbitz.com/Destinations-In-United-States-Of-America.d201.Vacation-Rental-Destinations"
+            target="_blank"
+          >
+            Vacation Rentals in United States</a
+          ><br />
+          <a
+            href="https://www.orbitz.com/Destinations-In-United-States-Of-America.d201.Car-Rental-Destinations"
+            target="_blank"
+          >
+            Car Rentals in United States</a
+          ><br />
+          <a
+            href="https://www.orbitz.com/Destinations-In-United-States-Of-America.d201.Flight-Destinations"
+            target="_blank"
+          >
+            Domestic Flights</a
+          ><br />
+          <a
+            href="https://www.orbitz.com/United-States-Of-America.d201.Destination-Travel-Guides"
+            target="_blank"
+          >
+            Vacation Packages in United States</a
+          ><br />
+          <a href="https://www.orbitz.com/reviews/"> Orbitz Reviews</a><br />
+          <a href=""> Orbitz Coupons</a><br />
+          <a href=""> LGBTQ Travel</a><br />
+          <a href=""> Unique Accommodations</a><br />
+          <a href=""> Travel Blog</a><br />
+        </div>
+
+        <div id="policies" class="equal_groups">
+          <h6>Policies</h6>
+          <a href="https://www.orbitz.com/lp/lg-privacy" target="_blank">
+            Privacy Policy</a
+          ><br />
+          <a href="https://www.orbitz.com/lp/lg-terms" target="_blank">
+            Terms of Use</a
+          ><br />
+          <a
+            href="https://www.vrbo.com/legal/terms-and-conditions"
+            target="_blank"
+          >
+            Vrbo terms and conditions</a
+          ><br />
+          <a href="https://www.orbitz.com/rewards/terms" target="_blank">
+            Orbitz Rewards Terms</a
+          ><br />
+          <a href="https://www.orbitz.com/dnsmpi" target="_blank">
+            Do not sell my personal information</a
+          ><br />
+        </div>
+
+        <div id="help" class="equal_groups">
+          <h6>Help</h6>
+          <a href="https://www.orbitz.com/service/" target="_blank">Support</a
+          ><br />
+          <a
+            href="https://www.orbitz.com/service/#/articles/560/34/16267"
+            target="_blank"
+            >Cancel your hotel or vacation rental booking</a
+          ><br />
+          <a
+            href="https://www.orbitz.com/service/#/articles/569/34/16477"
+            target="_blank"
+            >Cancel your flight</a
+          ><br />
+          <a
+            href="https://www.orbitz.com/service/#/myTrips/16138"
+            target="_blank"
+            >Refund timelines, policies & processes</a
+          ><br />
+          <a
+            href="https://www.orbitz.com/service/#/article/19518"
+            target="_blank"
+            >Use an Orbitz Coupon</a
+          ><br />
+        </div>
+  `;
+}
+
+// footer part
+function footerpart() {
+  return `
+        <p>
+          © 2022 Orbitz, LLC, an Expedia Group Company. All rights reserved.
+        </p>
+        <p>
+          Orbitz, Orbitz.com, and the Orbitz logo are trademarks or registered
+          trademarks of Orbitz, LLC. CST# 2083930-50.
+        </p>
+  `;
+}
+
+export {
+  stays,
+  flights,
+  cars,
+  packages,
+  things,
+  expedia,
+  cruises,
+  countryCodes,
+  footerpart,
+};

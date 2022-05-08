@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Orbitz Hotel Deals, Flights, Cheap Vacations & Rental Cars</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/index.css" />
     <link
@@ -81,7 +82,22 @@
       </div>
     </div>
 
+    <!-- right corner button  -->
+    <button id="help_button">
+      <span class="material-symbols-outlined"> forum </span>
+      <p>Help</p>
+    </button>
+
     <div id="megabox">
+      <!-- modal -->
+      <dialog id="modal">
+        <input
+          type="text"
+          id="modal_query"
+          placeholder="Where are you going?"
+        />
+      </dialog>
+
       <!-- head box -->
       <div id="head_box">
         <img src="./images/head_background.png" alt="" />
@@ -94,6 +110,7 @@
             <h4 id="things">Things to do</h4>
             <h4 id="cruises">Cruises</h4>
           </div>
+
           <div class="search_booking"></div>
         </div>
       </div>
@@ -264,7 +281,7 @@
           <h4>Text yourself a download link</h4>
           <select id="country_codes"></select>
           <input type="number" id="app_number" placeholder="Phone Number" />
-          <button id="submit" class="get_the_app">Get the app</button>
+          <button class="submit get_the_app">Get the app</button>
           <p id="alert"></p>
           <p id="message">
             By providing your number, you agree to receive a one-time automated
@@ -288,6 +305,7 @@
           class="accordion accordion-flush accor_all_boxes"
           id="accordionFlushExample"
         >
+          <!-- one  -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
               <button
@@ -307,14 +325,24 @@
               aria-labelledby="flush-headingOne"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                first item's accordion body.
+              <div class="accordion-body accor-body">
+                <div class="accor_points">
+                  <a href="">Flights Under $200</a> <br />
+                  <a href="">Travel Deals</a> <br />
+                  <a href="">Hotels Under $100</a> <br />
+                  <a href="">Orbitz Hotel Coupon</a> <br />
+                  <a href="">All our Destinations</a><br />
+                </div>
+                <div class="accor_points">
+                  <a href="">Orbitz Coupons</a> <br />
+                  <a href="">Car Rental Deals</a> <br />
+                  <a href="">Vacation Package Deals</a> <br />
+                  <a href="">Last Minute Travel Deals</a><br />
+                </div>
               </div>
             </div>
           </div>
-
+          <!-- two -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingTwo">
               <button
@@ -334,15 +362,21 @@
               aria-labelledby="flush-headingTwo"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                second item's accordion body. Let's imagine this being filled
-                with some actual content.
+              <div class="accordion-body accor-body">
+                <div class="accor_points">
+                  <a href="">Atlantic City hotels</a> <br />
+                  <a href="">Lahaina hotels</a> <br />
+                  <a href="">San Diego hotels</a> <br />
+                </div>
+                <div class="accor_points">
+                  <a href="">Honolulu hotels</a> <br />
+                  <a href="">Myrtle Beach hotels</a> <br />
+                  <a href="">Virginia Beach hotels</a> <br />
+                </div>
               </div>
             </div>
           </div>
-
+          <!-- three  -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingThree">
               <button
@@ -362,17 +396,25 @@
               aria-labelledby="flush-headingThree"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                third item's accordion body. Nothing more exciting happening
-                here in terms of content, but just filling up the space to make
-                it look, at least at first glance, a bit more representative of
-                how this would look in a real-world application.
+              <div class="accordion-body accor-body">
+                <div class="accor_points">
+                  <a href="">Austin hotels</a> <br />
+                  <a href="">Dallas hotels</a> <br />
+                  <a href="">Houston hotels</a> <br />
+                  <a href="">Las Vegas hotels</a> <br />
+                  <a href="">New Orleans hotels</a><br />
+                </div>
+                <div class="accor_points">
+                  <a href="">Chicago hotels</a> <br />
+                  <a href="">Denver hotels</a> <br />
+                  <a href="">Scottsdale hotels</a> <br />
+                  <a href="">Nashville hotels</a><br />
+                  <a href="">Phoenix hotels</a><br />
+                </div>
               </div>
             </div>
           </div>
-
+          <!-- four  -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingFour">
               <button
@@ -392,14 +434,30 @@
               aria-labelledby="flush-headingFour"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                first item's accordion body.
+              <div class="accordion-body accor-body">
+                <div class="accor_points">
+                  <a href="">Caribbean Vacations</a> <br />
+                  <a href="">Mexico Vacations</a> <br />
+                  <a href="">New York Vacations</a> <br />
+                  <a href="">Las Vegas Vacations</a> <br />
+                  <a href="">Disneyland Packages</a><br />
+                  <a href="">Costa Rica Vacations</a><br />
+                  <a href="">Orlando Vacations</a><br />
+                  <a href="">Colorado Vacations</a><br />
+                </div>
+                <div class="accor_points">
+                  <a href="">Hawaii Vacations</a> <br />
+                  <a href="">Miami Vacations</a> <br />
+                  <a href="">Punta Cuna Vacations</a> <br />
+                  <a href="">Cancun Vacations</a><br />
+                  <a href="">Florida Vacations</a><br />
+                  <a href="">Key West Vacations</a><br />
+                  <a href="">Grand Canyon Vacations</a><br />
+                </div>
               </div>
             </div>
           </div>
-
+          <!-- five  -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingFive">
               <button
@@ -419,17 +477,29 @@
               aria-labelledby="flush-headingFive"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                third item's accordion body. Nothing more exciting happening
-                here in terms of content, but just filling up the space to make
-                it look, at least at first glance, a bit more representative of
-                how this would look in a real-world application.
+              <div class="accordion-body accor-body">
+                <div class="accor_points">
+                  <a href="">Flights To Las Vegas</a> <br />
+                  <a href="">Flights To Los Angeles</a> <br />
+                  <a href="">Flights To San Diego</a> <br />
+                  <a href="">Flights to Denver</a> <br />
+                  <a href="">Flights to Washington</a><br />
+                  <a href="">Flights To Minneapolis St.Paul</a><br />
+                  <a href="">Flights To Atlantic City</a><br />
+                </div>
+                <div class="accor_points">
+                  <a href="">Flights To New York</a> <br />
+                  <a href="">Flights To Chicago</a> <br />
+                  <a href="">Flights To Seattle</a> <br />
+                  <a href="">Flights To San Francisco</a><br />
+                  <a href="">Flights To Boston</a><br />
+                  <a href="">Flights To Salt Lake City</a><br />
+                  <a href="">Flights To Reno</a><br />
+                </div>
               </div>
             </div>
           </div>
-
+          <!-- six  -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingSix">
               <button
@@ -449,17 +519,43 @@
               aria-labelledby="flush-headingSix"
               data-bs-parent="#accordionFlushExample"
             >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                third item's accordion body. Nothing more exciting happening
-                here in terms of content, but just filling up the space to make
-                it look, at least at first glance, a bit more representative of
-                how this would look in a real-world application.
+              <div class="accordion-body accor-body">
+                <div class="accor_points">
+                  <a href="">Car rental in Atlanta</a> <br />
+                  <a href="">Car rental in Chicago</a> <br />
+                  <a href="">Car rental in Dallas</a> <br />
+                  <a href="">Car rental in Detroit</a> <br />
+                  <a href="">Car rental in Las Vegas</a><br />
+                  <a href="">Car rental in New Orleans</a><br />
+                  <a href="">Car rental in Orlando</a><br />
+                  <a href="">Car rental in Philadelphia</a><br />
+                  <a href="">Car rental in Tampa</a><br />
+                </div>
+                <div class="accor_points">
+                  <a href="">Car rental in Boston</a> <br />
+                  <a href="">Car rental in Cincinnati</a> <br />
+                  <a href="">Car rental in Denver</a> <br />
+                  <a href="">Car rental in Houston</a><br />
+                  <a href="">Car rental in Miami</a><br />
+                  <a href="">Car rental in New York City</a><br />
+                  <a href="">Car rental in Palm Springs</a><br />
+                  <a href="">Car rental in San Diego</a><br />
+                  <a href="">Car rental in Washington DC</a><br />
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- expedia box -->
+      <div id="expedia_group">
+        
+      </div>
+
+      <!-- footer  -->
+      <div id="footer_area">
+        
       </div>
     </div>
   </body>
