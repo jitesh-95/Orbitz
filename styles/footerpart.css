@@ -1,0 +1,40 @@
+
+#footer{
+    display: flex;
+    height: auto;
+    width: auto;
+    /* border: 1px solid blue; */
+}
+
+#footer>div{
+    width: 20%;
+    height: 400px;
+    /* border: solid red 1px; */
+}
+#footer>div:first-child{
+    text-align: center;
+    margin-top: 25px;
+}
+#footer>div h4{
+    color: black;
+}
+#footer>div a{
+    /* padding-left: 10px; */
+    text-decoration: none;
+    color: #347e8f;
+    font-size: small;
+}
+#last_line>p{
+    padding: 0 20% 0 20%;
+    text-align: center;
+    font-size: small;
+    line-height: 10px;
+    color: black;
+}
+hr{
+    margin-bottom: 30px;
+}
+
+#footer>div a:hover{
+    text-decoration: underline;
+}
