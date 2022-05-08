@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbitz | Payment</title>
+
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/payment.css">
+    <link rel="stylesheet" href="./styles/hotelDataDiv.css">
+</head>
+
+<body>
+    <div id="color_div"></div>
+
+    <!-- navbar div  -->
+
+    <div id="navbar">
+
+        <img class="nabar_img" src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201" alt="">
+
+        <button id="navbar_button">Join Rewards</button>
+
+        <span id="sign_in" style="color:#00b1ff ;" i class="fa-solid fa-user"></i> <span>
+                <p id="signIn_para">Sign in</p>
+            </span></span>
+
+
+    </div>
+
+    <!-- navbar div ends here -->
+
+    <div id="secure">
+        <h1>Secure booking — only takes 2 minutes!</h1>
+    </div>
+
+    <!-- div cancel time -->
+
+    <div id="cancel_time">
+        <img src="https://forever.travel-assets.com/flex/flexmanager/images/2020/05/07/illustration__free__cancellation__non_bex__sml.svg"
+            alt="">
+        <div>
+            <p style="font-size: 13px; font-weight: bold; margin-top: 15px; margin-left: 18px;">Free cancellation before
+                Mon, May 16, 4:00pm (property local time)</p>
+            <p style="font-size: 13px; color: #616161;margin-left: 18px; ">You can change or cancel this stay for a full
+                refund if plans change. Because flexibility matters.</p>
+        </div>
+    </div>
+
+    <!-- div cancel time ends here-->
+
+
+    <!-- main div -->
+
+    <div id="main">
+        <div id="divForFlex">
+            <div id="orbucks">
+                <i style="margin-top:18px; margin-left: 18px;" class="fa-solid fa-lock"></i>
+                <a href="">
+                    <h3 style="margin-left: 18px; font-size: 17px;">Sign in to earn $6.00 in Orbucks</h3>
+                </a>
+            </div>
+
+            <!-- Room div starts -->
+            <div id="room">
+
+                <div id="room_1" style="display:flex ; font-size: 15px;">
+                    <p> <span style="margin-top: -5px; margin-right: 10px; margin-left: 18px;"
+                            class="material-symbols-outlined">person_filled</span> </p>
+                    <p><b style="margin-right: 10px;">Room 1:</b> 2 Adults, Non-smoking</p>
+                </div>
+
+                <div style="display: flex; margin-top:-33px; margin-left: 48px; font-size: 13px; color: #2f7000;">
+                    <span style="margin-top:15px ;" class="material-symbols-outlined">check</span>
+                    <p style="margin-top:20px ; margin-right: 10px;">Free Parking</p>
+
+                    <span style="margin-top:15px ;" class="material-symbols-outlined">check</span>
+                    <p style="margin-top:20px ; margin-right: 10px;">Free WiFi</p>
+                </div>
+
+                <div style="display: flex; margin-left: 48px;">
+
+                    <div>
+                        <p class="enter_detail">First name*</p>
+                        <input id="one" style="padding: 10px;" id="create_pass" type="text" size="25" placeholder="(e.g. John)">
+                    </div>
+
+
+                    <div style="margin-left: 30px;">
+                        <p class="enter_detail">Last name*</p>
+                        <input id="two" style="padding: 10px;" id="create_pass" type="text" size="25" placeholder="(e.g. Smith)">
+                    </div>
+
+                </div>
+
+                <p style="margin-left: 48px;" class="enter_detail">Mobile phone number *</p>
+
+                <div style="display: flex; margin-left: 48px;">
+                    <div>
+                        <select style="padding: 10px;" name="" id="">
+                            <option value="">IND +91</option>
+                            <option value="">USA +1</option>
+                            <option value="">AF +93</option>
+                            <option value="">BR +55</option>
+                            <option value="">EG +20</option>
+                            <option value="">ESP +34</option>
+                            <option value="">SZ +268</option>
+                            <option value="">SY +963</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-left: 30px;">
+                        <input id="three" style="padding: 10px;" type="number" maxlength="10" size="25"
+                            placeholder="So the property can reach you " >
+                    </div>
+                </div>
+
+                <input type="checkbox" name="" id=""
+                    style="zoom:1.5; float: left; margin-left: 33px; margin-top: 10px;">
+                <p style="font-size:15px ;">Receive text alerts about this trip. Message and data rates may apply.</p>
+
+                <div style="line-height:1px ;">
+                    <p class="green_15px" style="margin-left: 48px;">Bedding requests (optional) <span
+                            class="material-symbols-outlined">
+                            keyboard_double_arrow_down
+                        </span></p>
+
+
+                    <p class="green_15px" style="margin-left: 48px; margin-top: -10px;">Special Requests (optional)
+                        <span class="material-symbols-outlined">
+                            keyboard_double_arrow_down
+                        </span></p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <!-- hotel div starts -->
+
+        <div id="hotel_div"></div>
+
+        <!-- hotel div ends -->
+    </div>
+
+    </div>
+
+    <!-- main div ends here-->
+
+
+    <!-- 2nd main div -->
+
+    <div id="secondMain">
+        <div id="2ndflexDiv">
+            <div id="protect">
+
+                <div id="shield">
+                    <span class="material-symbols-outlined" id="shield_icon">shield</span>
+                    <h3 id="shield_h2">Protect your hotel</h3>
+                    <button id="shield_btn">Recommended</button>
+
+                </div>
+
+                <div id="important">
+
+                    <div style="display:flex; ">
+
+                        <div style="margin-left:15px;"><span class="material-symbols-outlined" style="margin-top: 7px;">
+                                error
+                            </span></div>
+
+                        <div>
+                            <p style="color:#616161 ; font-weight: bolder; margin-left: 8px; font-size: 13px;">
+                                Important:</p>
+                        </div>
+
+                        <p style="font-size: 13px; margin-left: 10px;"> Trip cancellation due to government travel
+                            advisories, fear of travel, or change of mind is not covered.</p>
+
+                    </div>
+                    <p style="font-size: 13px; margin-top: -10px; margin-left:20px ;">Travel insurance may provide
+                        coverage for COVID-19 diagnosed illness. COVID-19 is a foreseen event and certain other</p>
+                    <p style="font-size: 13px; margin-top: -10px; margin-left: 20px;">coverages will not apply. <a
+                            href="">Learn more</a> </p>
+                </div>
+
+                <div id="protect_change">
+
+                    <div style="margin-left: 18px; margin-top: 13px;"><span
+                            class="material-symbols-outlined">check</span></div>
+                    <div style="margin-left: 15px; margin-top: -3px;">
+                        <p>You've added travel protection to your trip. <a href="">Change</a></p>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- card div starts -->
+
+            <div id="card">
+
+                <div style="display: flex;"><span class="material-symbols-outlined"
+                        style="margin-left: 18px; padding-top: 18px;">
+                        credit_card
+                    </span>
+                    <p style="padding-left: 20px; padding-right: 30px; color: #2f7000; font-size: 15px;"><span
+                            class="material-symbols-outlined">
+                            done
+                        </span>We use secure transmission</p>
+
+                    <p style="color: #2f7000; font-size: 15px;"><span class="material-symbols-outlined">
+                            done
+                        </span>We use secure transmission</p>
+
+
+                </div>
+                <div id="debit">
+                    <div>Debit/Credit Card</div>
+                    <div style="color: #306fbd;">Monthly Payments</div>
+                    <div style="color: #306fbd;">Click-to-Pay</div>
+                </div>
+                <hr style="width:87%;">
+
+                <div id="debit_image">
+                    <img src="https://a.travel-assets.com/dms-svg/payments/cards-cc_master_card.svg" alt="">
+                    <img src="https://a.travel-assets.com/dms-svg/payments/cards-cc_american_express.svg" alt="">
+                    <img src="https://a.travel-assets.com/dms-svg/payments/cards-cc_china_union_pay.svg" alt="">
+                    <img src="https://a.travel-assets.com/dms-svg/payments/cards-cc_diners_club.svg" alt="">
+                    <img src="https://a.travel-assets.com/dms-svg/payments/cards-cc_discover.svg" alt="">
+                    <img src="https://a.travel-assets.com/dms-svg/payments/cards-cc_jcb.svg" alt="">
+                    <img src="https://a.travel-assets.com/dms-svg/payments/cards-cc_visa.svg" alt="">
+                </div>
+
+                <!-- card input data div ends -->
+
+                <div id="cardInputData_div">
+
+                    <p class="enter_detail">Name on Card*</p>
+                    <input class="four" style="padding: 10px;" id="create_pass" type="text" size="60">
+
+                    <p class="enter_detail">Debit/Credit card number*</p>
+                    <input class="five" style="padding: 10px;" id="create_pass" type="text" size="30">
+
+                    <p class="enter_detail">Expiration date*</p>
+                    <select name="" id="" style="padding: 10px;">
+                        <option value="">Month</option>
+                        <option value="">01-Jan</option>
+                        <option value="">02-Feb</option>
+                        <option value="">03-Mar</option>
+                        <option value="">04-Apr</option>
+                        <option value="">05-May</option>
+                        <option value="">06-Jun</option>
+                        <option value="">07-Jul</option>
+                        <option value="">08-Aug</option>
+                        <option value="">09-Sept</option>
+                        <option value="">10-Oct</option>
+                        <option value="">11-Nov</option>
+                        <option value="">12-Dec</option>
+                    </select>
+
+                    <select style="padding: 10px;">
+                        <option value="">Year</option>
+                        <option value="">2022</option>
+                        <option value="">2023</option>
+                        <option value="">2024</option>
+                        <option value="">2025</option>
+                        <option value="">2026</option>
+                        <option value="">2027</option>
+                        <option value="">2028</option>
+                        <option value="">2029</option>
+                        <option value="">2030</option>
+                        <option value="">2031</option>
+                        <option value="">2032</option>
+                    </select>
+
+                    <div id="zipCode_div" style="display: flex;">
+                        <div>
+                            <p class="enter_detail">Security code*</p>
+                            <input class="six" style="padding: 10px;" id="create_pass" type="text" size="7">
+
+                        </div>
+
+                        <div style="margin-left: 5em;">
+                            <p class="enter_detail">Billing ZIP code*</p>
+                            <input class="seven" style="padding: 10px;" id="create_pass" type="text" size="15" maxlength="6" minlength="6">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- card inputdata div ends -->
+
+
+
+        <!-- card  div ends -->
+
+
+        <!-- price div starts -->
+
+        <div id="price">
+
+            <h3 id="price_h3">Price details</h3>
+            <hr>
+
+            <div id="price_data">
+
+                <div style="display: flex; margin-left: 18px;">
+
+                    <div style="line-height: 25px;">
+                        <p>1 room x 1 night</p>
+                        <p>Taxes and fees </p>
+                        <p>Hotel Booking Protection Plus</p>
+                    </div>
+
+                    <div style="line-height:25px ; margin-left: 4em;">
+                        <p>$199.96</p>
+                        <p>$35.99</p>
+                        <p>$16.00</p>
+                    </div>
+                </div>
+                <hr style="width: 90%;">
+
+                <div id="price_total">
+                    <div>
+                        <p>Total</p>
+                    </div>
+                    <div>
+                        <p>$251.95</p>
+                    </div>
+                </div>
+
+                <p id="price_para">Use a coupon, credit, or promotion code</p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- 2nd main ends here -->
+
+    <!-- booking manage div starts here -->
+
+    <div id="booking_manage">
+
+        <h2 id="booking_h2">Manage your booking</h2>
+        <hr>
+
+        <!-- confirmation data div starts -->
+        <div id="confirmation_data">
+
+            <h3 class="booking_h3">Confirmation email</h3>
+            <p class="booking_para1">Please enter the email address where you would like to receive your confirmation.
+            </p>
+
+            <p class="enter_detail">Email address *</p>
+            <input class="eight" id="booking_mail" type="email" size="60">
+            <br>
+            <br>
+            <hr>
+
+            <h3 class="booking_h3">Create an account</h3>
+            <p class="booking_para1">Easily access your itinerary when you create an account using the email address
+                above.</p>
+            <p class="enter_detail">Create password</p>
+            <input class="nine" style="padding: 10px;" id="create_pass" type="password" size="60"
+                placeholder="6 - 30 characters, no spaces">
+            <p class="enter_detail">confirm password</p>
+            <input class="ten" style="padding: 10px;" id="create_pass" type="password" size="60">
+
+            <p style="font-size:16px ;"> <span style="color:#616161; ;">By creating an account, I agree to the</span>
+                <span style="color:#306fbd;"> Orbitz Rewards Terms and Conditions.</span></p>
+
+        </div>
+
+
+
+        <!-- confirmaiton data div starts -->
+
+
+    </div>
+
+    <!-- booking manage div ends here -->
+
+
+    <!-- complete button div starts here -->
+
+    <div id="complete_booking">
+
+        <h3 id="book_para1">Important information about your booking</h3>
+
+        <ul>
+            <li>Cancellations or changes made after 4:00pm (property local time) on May 16, 2022 or no-shows are subject
+                to a property <br> fee equal to 100% of the total amount paid for the reservation.</li> <br>
+            <li>This property offers transfers from the airport (surcharges may apply). Guests must contact the property
+                with arrival details before travel, using the contact information on the booking confirmation. Front
+                desk staff will greet guests on arrival.</li><br>
+            <li>To register at this property, guests who are Indian citizens must provide a valid photo identity card
+                issued by the <br> Government of India; travelers who are not citizens of India must present a valid
+                passport and visa.</li><br>
+        </ul>
+
+        <p id="book_para2">By clicking on the button below, I acknowledge that I have reviewed the <a href=""> Privacy
+                statement</a><span class="material-symbols-outlined"
+                style="font-size: 15px; padding-left: 5px;">filter_none</span>
+            and <a href=""> Government Travel Advice</a><span class="material-symbols-outlined"
+                style="font-size: 15px; padding-left: 5px;">filter_none</span>
+            and and have reviewed and accept the <a href=""> Rules & Restrictions</a><span
+                class="material-symbols-outlined" style="font-size: 15px; padding-left: 5px;">filter_none</span>
+            and <a href=""> Terms of Use</a><span class="material-symbols-outlined"
+                style="font-size: 15px; padding-left: 5px;">filter_none</span></p>
+
+        <p id="book_para3"><span class="material-symbols-outlined">
+                check
+            </span> Change of plans? No problem. You can cancel for free before Mon, May 16</p>
+
+        <button id="booking_button" onclick="confirm()">Complete Booking <span
+                    class="material-symbols-outlined">
+                    chevron_right
+                </span></button>
+
+        <p class="book_para4"><span class="material-symbols-outlined">
+                lock
+            </span>We use secure transmission and encrypted storage to protect your personal information.</p>
+
+        <p class="book_para4">This payment will be processed in the U.S. This does not apply when the travel provider
+            (airline/hotel/rail, etc.) processes your payment.</p>
+    </div>
+
+    <!-- complete button div ends here -->
+
+
+    <!-- footer starts here -->
+
+    <!-- footer div starts -->
+
+    <div id="footer_div">
+
+        <a id="a_footer" href="" style=" text-decoration: none;">
+            <p id="para_foot">[+] Tell us what you think <span style="font-size: 15px; padding-left: 5px;"
+                    class="material-symbols-outlined">filter_none</span></p>
+        </a>
+
+        <div id="footerDiv_data">
+            <p style="margin-right:30px ;">Privacy Policy<span class="material-symbols-outlined"
+                    style="font-size: 15px; padding-left: 5px;">filter_none</span></p>
+            <p style="margin-right:30px ;">Terms of Use<span class="material-symbols-outlined"
+                    style="font-size: 15px; padding-left: 5px;">filter_none</span></p>
+            <p>Do Not Sell My Personal Information<span class="material-symbols-outlined"
+                    style="font-size: 15px; padding-left: 5px;">filter_none</span></p>
+        </div>
+
+        <p id="para_foot-2">© 2022 Orbitz, LLC, An Expedia Group Company. All rights reserved.</p>
+
+        <img id="img_footer"
+            src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg"
+            alt="">
+
+    </div>
+
+    <!-- footer div ends -->
+
+
+    <!-- footer ends here -->
+
+</body>
+
+</html>
+
+<script src="./scripts/payment.js"></script>

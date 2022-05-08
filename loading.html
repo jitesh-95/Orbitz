@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbitz | Booking Confirmation</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <style>
+
+body{
+    background-color: #ededed;
+    
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    
+}
+
+/* 1 => navbar css */
+#color_div{
+    background-color: #00b1ff;
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    bottom:0;
+    right:0; 
+}
+
+
+#navbar{
+    background-color: 
+    #00253c;
+    height: 61px;
+    width: 100%;
+    margin: -10px -8px;
+    padding: 0px 8px 0px 24px;
+    /* position: fixed; */
+    /* top: 0; */
+    left: 0;
+    /* bottom:0; */
+    right:0;
+    
+
+  
+}
+
+.nabar_img{
+    margin-left: 196px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+#navbar_button{
+    position: absolute;
+    margin-left: 12px;
+    margin-top: 28px;
+    margin-bottom: 11px;
+    border-radius: 5px;
+    background-color:#8e0099;
+    color: white;
+}
+
+
+/* 1 => navbar css ends here */
+
+
+/* text div css starts */
+
+#text_div{
+    margin: auto;
+    margin-top: 5em;
+    /* border: 1px solid blue; */
+    width: 60%;
+    height: 150px;
+    text-align: center;
+    line-height: 16px;
+}
+
+p{
+    color: #616161;
+}
+
+#gif_div{
+    /* border: 1px solid red; */
+    height: 200px;
+    width: 400px;
+    margin: auto;
+     margin-top: -8em;
+}
+
+#gif_div > #gif{
+    width: 100%;
+    height: 200px;
+}
+
+/* text div css ends */
+
+    </style>
+</head>
+<body>
+     
+     <!-- navbar div  -->
+
+     <div id="navbar">
+
+        <img class="nabar_img" src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201" alt="">
+
+        <button id="navbar_button">Join Rewards</button>
+
+        <!-- <span id="sign_in" style="color:#00b1ff ;" i class="fa-solid fa-user"></i> <span><p id="signIn_para">Sign in</p></span></span>  -->
+        
+
+    </div>
+
+    <!-- navbar div ends here -->
+
+    <!-- text div starts  -->
+
+    <div id="text_div">
+
+        <h2>We're confirming your booking</h2>
+
+        <p>This could take a few minutes, so please don't refresh your browser or use the back button.</p>
+   
+    </div>
+  
+    <!-- text div ends -->
+
+    <!-- gif div starts -->
+<div id="gif_div">
+    <img id="gif" src="https://explore.setbuyatoyota.com/app/plugins/set-explore-dealer/img/Ajax-Preloader.gif" /></div>
+
+     <!-- gif div ends -->
+
+</body>
+</html>
+
+
+
+<script>
+    const myTimeout = setTimeout(loading, 5000);
+    
+    function loading() {
+   
+        window.location.href="./booking_done.html"
+      
+        // window.open("./booking_done.html","_blank");
+        // console.log("hi")
+    }
+    </script>
