@@ -64,7 +64,7 @@ https://github.com/jitesh-95/Orbitz
 - [AnniRoy Animesh Roy](https://github.com/AnniRoy)
 - [saber003](https://github.com/saber003)
 - [Shubh1237](https://github.com/Shubh1237)
-- [Ayush](https://github.com/saber003)
+
 
 
 ## Lessons Learned
@@ -97,6 +97,6 @@ Ayushi : [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the
 Saber : [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/saber-patel-616001230/)
 Animesh : [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ayushi-gupta-b98676236/)
 Shubham : [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/umesh-talekar-51361822b/)
-Ayush : [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](http://linkedin.com/in/shivani-1236b)
+
 
 
