@@ -97,3 +97,8 @@ function confirm() {
 
   return (window.location.href = "loading.html");
 }
+
+//user
+let userName = JSON.parse(localStorage.getItem("user"));
+let displayUser = document.querySelector("#signIn_para");
+displayUser.innerText= userName.first_name;

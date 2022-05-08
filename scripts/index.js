@@ -12,7 +12,7 @@ import {
 } from "../component/head.js";
 
 //navbar
-document.querySelector("#navbar").innerHTML=navbarreturn();
+document.querySelector("#navbar").innerHTML = navbarreturn();
 
 let bookingdiv = document.querySelector(".search_booking");
 // default
@@ -176,15 +176,32 @@ function getApp() {
 }
 document.querySelector(".get_the_app").addEventListener("click", getApp);
 
-
 //experdia group
 document.querySelector("#expedia_group").innerHTML = expedia();
 
 //footer part
 document.querySelector("#footer_area").innerHTML = footerpart();
 
+//user name
+let userName = JSON.parse(localStorage.getItem("user"));
+let displayUser = document.querySelector("#user_account");
+let showuser = () => {
+  if (userName === null) {
+    return false;
+  }
+  return (displayUser.innerHTML = userName.first_name);
+};
+showuser();
+
 // for search page
 
-document.querySelector(".second_page").addEventListener("click",()=>{
-  window.location.href="search.html";
-})
+document.querySelector(".second_page").addEventListener("click", () => {
+  if (goingText.innerHTML === "Going to") {
+    return alert("Please select a location");
+  }
+  if (displayUser.innerHTML === "Sign In") {
+    return alert("Please Sign in first");
+  }
+
+  return (window.location.href = "search.html");
+});

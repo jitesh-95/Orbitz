@@ -29,11 +29,11 @@ function navbarreturn() {
       <div id="options">
         <h4><a href="">Español</a></h4>
         <h4><a href="">List Your Property</a></h4>
-        <h4><a href="">Support</a></h4>
+        <h4><a href="./support.html">Support</a></h4>
         <h4><a href="">Trips</a></h4>
         <h4>
           <li class="traveloptions signin">
-            Sign in
+            <p id="user_account">Sign In</p>
             <div class="sub-menu-2">
               <h6>Members can access discounts, points and special features</h6>
               <div id="signin"><a href="signin.html">Sign in</a></div>
