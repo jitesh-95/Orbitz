@@ -32,6 +32,7 @@ let verify = () => {
       console.log(x);
       flag = false;
       //    console.log(users_data[i].email,users_data[i].password)
+      localStorage.setItem("user",JSON.stringify(users_data[i]));
       break;
     } else if (
       users_data[i].email == email &&
@@ -43,7 +44,7 @@ let verify = () => {
   }
   if (flag == false) {
     alert("Sign in successful");
-    window.location.href = "./navbar.html";
+    window.location.href = "./index.html";
   } else if (click == false) {
     alert("Please click on checkbox");
   } else {
