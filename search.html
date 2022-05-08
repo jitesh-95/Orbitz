@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Search Results</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/search.css">
+    <!-- <link rel="stylesheet" href="hotel.css"> -->
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+   
+</head>
+<body>
+    <!-- navbar -->
+    <div id="navbar">
+        <div id="left">
+            <img src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201&2"/>
+            <p class="hover">More travel <span><i class="fa-solid fa-angle-down fa-1x"></i></span></p>
+        </div>
+        <div id="right">
+
+            <p class="hover">Espanol</p>
+            <p class="hover">List your property</p>
+            <p class="hover">Support</p>
+            <p class="hover">Trips</p>
+            <p class="hover">Sign in</p>
+        </div>
+    </div>
+    <!-- navabar ends -->
+<div id="container">
+<div id="box">
+    <div id="search">
+    <div id="box1">
+       <div id="location"><span><i class="fa-solid fa-location-dot fa-2x"></i></span></div>
+       <div class="city">
+           <p class="grey">Going to</p>
+           <p>Delhi(DEL),India</p>
+       </div>
+    </div>
+    <div id="box2">
+        <div id="location"><span><i class="fa-solid fa-calendar-day fa-2x"></i></span></div>
+        <div class="city">
+            <p class="grey">Check-in</p>
+            <p>May 11</p>
+        </div>
+    </div>
+    <div id="box3">
+        <div id="location"><span><i class="fa-solid fa-calendar-day fa-2x"></i></span></div>
+        <div class="city">
+            <p class="grey">Check-out</p>
+            <p>May 12</p>
+        </div>
+
+    </div>
+    <div id="box4">
+        <div id="location"><span><i class="fa-solid fa-user fa-2x"></i></span></div>
+        <div class="city">
+            <p class="grey">Travelers</p>
+            <p>1 room 2tr...</p>
+        </div>
+    </div>
+    <button id="button">search</button>
+    </div>
+<div class="landr">
+  <div class="left_side">
+
+    <div class="map">
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="329" height="245" id="gmap_canvas" src="https://maps.google.com/maps?q=delhi&t=&z=9&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123 movies</a><br><style>.mapouter{position:relative;text-align:right;height:245px;width:329px;}</style><a href="https://www.embedgooglemap.net">google map for website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:190px;width:280px;}</style></div></div> 
+        
+        </div>
+        <div id="view">
+             <p id="v">View in a map</p>
+        </div>
+    
+      <hr>
+    <div class="property">
+       <h3>Search by property name</h3> 
+       <input type="text" id="text" placeholder="e.g. Best Western"/>
+       <br>
+       <br>
+       <hr>
+    </div>
+    <div class="filter">
+        <h2 id="h">Filter by</h2>
+        <h4>Popular filters</h4>
+        <label>
+            <input type="checkbox" class="Advanced"  name="radio"/>
+            <span>Free airport shuttle</span>
+        </label>
+        <br>
+        <br>
+        <label>
+            <input type="checkbox" class="Advanced"  name="radio"/>
+            <span>Bed & Breakfast</span>
+        </label>
+        <br>
+        <br>
+        <label>
+            <input type="checkbox" class="Advanced"  name="radio"/>
+            <span>Hot tub</span>
+        </label>
+        <br>
+        <br>
+        <label>
+            <input type="checkbox" class="Advanced"  name="radio"/>
+            <span>Spa</span>
+        </label>
+        <br>
+      <br>
+        <label>
+            <input type="checkbox" class="Advanced"  name="radio"/>
+            <span>Free cancellation</span>
+        </label>
+        <br>
+        <br>
+    </div>
+    <div class="star">
+        <h4>Star rating</h4>
+        <div class="grid">
+        <div>1<span><i class="fa-solid fa-star"></i></span></div>
+        <div>2<span><i class="fa-solid fa-star"></i></span></div>
+        <div>3<span><i class="fa-solid fa-star"></i></span></div>
+        <div>4<span><i class="fa-solid fa-star"></i></span></div>
+        <div>5<span><i class="fa-solid fa-star"></i></span></div>
+        </div>
+    </div>
+    <div class="budget">
+        <h4 id="h4">Your budget</h4>
+        <label>
+            <input type="checkbox" class="Advanced"  name="radio"/>
+            <span>Less than $75</span>
+        </label>
+        <br>
+        <br>
+        <label>
+            <input type="checkbox" class="Advanced"  name="radio"/>
+            <span>$75 to $125</span>
+        </label>
+        <br>
+        <br>
+        <label>
+            <input type="checkbox" class="Advanced"  name="radio"/>
+            <span>$125 to $200</span>
+        </label>
+        <br>
+        <br>
+        <label>
+            <input type="checkbox" class="Advanced"  name="radio"/>
+            <span>$200 to $300</span>
+        </label>
+        <br>
+        <br>
+        <label>
+            <input type="checkbox" class="Advanced"  name="radio"/>
+            <span>Greater than $300</span>
+        </label>
+
+    </div>
+    <div class="rating">
+
+        <h4>Guest rating</h4>
+        <label>
+            <input type="radio" class="Advanced"  name="radio"/>
+            <span>Any</span>
+        </label>
+        <br>
+        <br>
+        <label>
+            <input type="radio" class="Advanced"  name="radio"/>
+            <span>Wonderful 4.5+</span>
+        </label>
+        <br>
+        <br>
+        <label>
+            <input type="radio" class="Advanced"  name="radio"/>
+            <span>Very good 4+</span>
+        </label>
+        <br>
+        <br>
+        <label>
+            <input type="radio" class="Advanced"  name="radio"/>
+            <span>Good 3.5+</span>
+        </label> 
+    </div>
+    <div class="payment">
+        <h4>Payment type</h4>
+        <label>
+            <input type="checkbox" class="Advanced"  name="radio"/>
+            <span>fully refundable</span>
+        </label>
+        <br>
+        <br>
+        <label>
+            <input type="checkbox" class="Advanced"  name="radio"/>
+            <span>Reserve now,pay later</span>
+        </label>
+        
+    </div>
+    <div class="pro">
+        <h4>Property type</h4>
+        <label>
+            <input type="checkbox" class="Advanced"  name="radio"/>
+            <span>Bed & breakfast</span>
+        </label>
+        <br>
+        <br>
+        <label>
+            <input type="checkbox" class="Advanced"  name="radio"/>
+            <span>Hotel</span>
+        </label>
+        <br>
+        <br>
+        <label>
+            <input type="checkbox" class="Advanced"  name="radio"/>
+            <span>Villa</span>
+        </label>
+       <p class="blue">See more</p>
+    </div>
+    <div class="trav">
+     <h4>Traveler experience</h4>
+     <label>
+        <input type="checkbox" class="Advanced"  name="radio"/>
+        <span>LGBTQ Welcoming <br>See properties that pledge to make all guests feel safe, welcome, and respected.</span>
+    </label>
+    <br>
+    <br>
+    <label>
+        <input type="checkbox" class="Advanced"  name="radio"/>
+        <span>Business friendly<br>
+            See properties with amenities to help you work comfortably, like WiFi and breakfast.</span>
+    </label>
+    <br>
+    <br>
+    <label>
+        <input type="checkbox" class="Advanced"  name="radio"/>
+        <span>Family friendly <br>
+            See properties that include family essentials like in-room conveniences and activities for the kids.</span>
+    </label>
+    </div>
+    <div class="neighbour">
+       <h4>Neighbourhood</h4>
+        <label>
+            <input type="radio" class="Advanced"  name="radio"/>
+            <span>Delhi (and vincity)</span>
+        </label>
+        <br>
+        <br>
+        
+        <label>
+            <input type="radio" class="Advanced"  name="radio"/>
+            <span>Rajouri garden</span>
+        </label>
+        <br>
+        <br>
+        
+        <label>
+            <input type="radio" class="Advanced"  name="radio"/>
+            <span>Chanakyapuri</span>
+        </label>
+        <br>
+    
+        <p class="blue">See more</p>
+    </div>
+    <div class="locs">
+        <h4>Popular locations</h4>
+        
+        <label>
+            <input type="radio" class="Advanced"  name="radio"/>
+            <span>India Gate</span>
+        </label>
+        <br>
+        <br>
+        
+        <label>
+            <input type="radio" class="Advanced"  name="radio"/>
+            <span>Jama masjid</span>
+        </label>
+        <br>
+        <br>
+        
+        <label>
+            <input type="radio" class="Advanced"  name="radio"/>
+            <span>chandani chowk</span>
+        </label>
+       <p class="blue">See More</p>
+    </div>
+    <div class="meal">
+        <h4>Meal plan available</h4>
+       
+        <label>
+            <input type="checkbox" class="Advanced"  name="radio"/>
+            <span>Breakfast included</span>
+        </label>
+        <br>
+        <br>
+        
+        <label>
+            <input type="checkbox" class="Advanced"  name="radio"/>
+            <span>Lunch included</span>
+        </label>
+        <br>
+        <br>
+       
+        <label>
+            <input type="checkbox" class="Advanced"  name="radio"/>
+            <span>Dinner included</span>
+        </label>
+      <p class="blue">See more</p>
+    </div>
+    <div class="amneities">
+        <h4>Amenities</h4>
+       
+        <label>
+            <input type="checkbox" class="Advanced"  name="radio"/>
+            <span>Free airport shuttle</span>
+        </label>
+        <br>
+        <br>
+       
+        <label>
+            <input type="checkbox" class="Advanced"  name="radio"/>
+            <span>Hot tub</span>
+        </label>
+        <br>
+        <br>
+    
+        <label>
+            <input type="checkbox" class="Advanced"  name="radio"/>
+            <span>Spa</span>
+        </label>
+        <p class="blue">See more</p>
+    </div>
+    <div class="reward">
+        <h4>Orbitz rewards</h4>
+        <label>
+            <input type="checkbox" class="Advanced"  name="radio"/>
+            <span>VIP Access properties</span>
+        </label>
+    </div>
+    <div class="acc">
+        <h4>Accessibility</h4>
+        <label>
+            <input type="checkbox" class="Advanced"  name="radio"/>
+            <span>
+                Wheelchair-accessible parking</span>
+        </label>
+        <br>
+        <br>
+        <label>
+            <input type="checkbox" class="Advanced"  name="radio"/>
+            <span>Elevator</span>
+        </label>
+        <br>
+        <br>
+        <label>
+            <input type="checkbox" class="Advanced"  name="radio"/>
+            <span>Accessible bathroom</span>
+        </label>
+       <p class="blue">See more</p>
+    </div>
+  </div>
+  <div class="right_side">
+      <div class="add">
+          <div class="pick">
+               <h4>See how we pick our recommended properties    <span><i class="fa-solid fa-circle-info"></i></span></h4>
+            </div>
+          <div class="select_tag">
+              <select id="option">
+                  <option>Recommended</option>
+                  <option value="price">Price</option>
+                  <option value="distance">Distance from downtown</option>
+                  <option value="rating">Guest rating + our picks</option>
+                  <option value="price"> price + our picks</option>
+                  <option value="star">Star rating</option>
+              </select>
+          </div>
+        </div>
+        <!-- select end -->
+        <div id="hotel"></div>
+  </div>
+ </div>
+</div>
+<div id="pop">
+    <img  id="pop"  src="https://tpc.googlesyndication.com/simgad/17193743292603108542"/>
+</div>
+<!-- div for container -->
+
+</div>
+
+
+<button id="show_more">Show more</button>
+<div id="beach">
+    <img  id="img_beach"  src="https://tpc.googlesyndication.com/simgad/16784630319355144489?"/>
+</div>
+<!-- div for p and button -->
+<div id="fee">
+<p id="site">Tell us how we can improve our site</p>
+<button id="feedback">Share feedback</button>
+</div>
+<div id="app">
+    <img  id="app_img"  src="./images/img.png"/>
+</div>
+<div id="expedia_group"></div>
+<div id="footer_area"></div>
+</body>
+</html>
+
+<script src="./scripts/search.js" type="module"></script>

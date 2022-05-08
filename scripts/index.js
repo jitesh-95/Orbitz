@@ -1,4 +1,5 @@
 import {
+  navbarreturn,
   stays,
   flights,
   cars,
@@ -9,6 +10,9 @@ import {
   expedia,
   footerpart,
 } from "../component/head.js";
+
+//navbar
+document.querySelector("#navbar").innerHTML=navbarreturn();
 
 let bookingdiv = document.querySelector(".search_booking");
 // default
@@ -179,3 +183,8 @@ document.querySelector("#expedia_group").innerHTML = expedia();
 //footer part
 document.querySelector("#footer_area").innerHTML = footerpart();
 
+// for search page
+
+document.querySelector(".second_page").addEventListener("click",()=>{
+  window.location.href="search.html";
+})
