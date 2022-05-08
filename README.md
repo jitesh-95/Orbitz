@@ -13,6 +13,11 @@ our platform helps people and individuals to have great Travellilng experience.
 Here you can have a Look on our site Orbitz.com  
 https://github.com/jitesh-95/Orbitz.git
 
+## Blog
+
+Here you can check our website's official Blog  
+https://medium.com/@ayushigupta0516/the-inside-to-our-collaborative-project-91b5b944050c
+
 
 
 ## Wesite Screenshots
