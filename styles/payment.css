@@ -1,0 +1,456 @@
+body{
+    background-color: #ededed;
+    font-family:  "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+    
+    
+}
+
+/* enter detail headline para for page css starts */
+
+.enter_detail{
+    font-size: 14px;
+    font-weight: bolder;
+    color: #616161;
+    font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+}
+
+
+/* enter detail headline para for page css starts */
+
+
+/* 1 => navbar css */
+#color_div{
+    background-color: #00b1ff;
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    bottom:0;
+    right:0; 
+}
+
+
+#navbar{
+    background-color: 
+    #00253c;
+    height: 61px;
+    width: 100%;
+    margin: -10px -8px;
+    padding: 0px 8px 0px 24px;
+    /* position: fixed; */
+    /* top: 0; */
+    left: 0;
+    /* bottom:0; */
+    right:0;
+    
+
+  
+}
+.nabar_img{
+    margin-left: 196px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+#navbar_button{
+    position: absolute;
+    margin-left: 12px;
+    margin-top: 28px;
+    margin-bottom: 11px;
+    border-radius: 5px;
+    background-color:#8e0099;
+    color: white;
+}
+
+
+#sign_in{
+    
+    float: right;
+    margin-right: 5em;
+    display: flex;
+    margin-top: 18px;
+    margin-bottom: 9px;
+}
+#signIn_para{
+font-family: "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+padding-left: 10px;
+margin-top: 1px;
+    margin-bottom: 9px;
+    margin-right: 196px;
+    font: 10px;
+
+}
+
+
+/* 1 => navbar css ends here */
+
+
+/* 2 => secure div */
+
+#secure{
+margin-left: 184px;
+color: #202843;
+margin-top: 25px;
+}
+
+/* 2 => secure div ends*/
+
+
+/* 3 => cancel_time div*/
+
+#cancel_time{
+    display: flex;
+    height: 73px;
+    width: 75%;
+    background-color: white;
+    margin: auto;
+   
+}
+
+/* 3 => cancel_time div ends*/
+
+/* main div starts here */
+
+#main{
+    display: flex;
+}
+#orbucks{
+    display: flex;
+    height: 49px;
+    width: 763px;
+    background-color: white;
+    margin-left: 184px;
+    margin-top: 20px;
+    
+}
+
+/* room div css starts */
+
+#room{
+    height: 360px;
+    width: 763px;
+    background-color: white;
+    margin-left: 184px;
+    margin-top: 15px;
+    
+}
+
+.green_15px{
+    font-size: 15px;
+    color: #0065b8;
+}
+
+/* room div css ends */
+
+
+
+/* protect div starts */
+#shield{
+    display: flex;
+}
+#shield_icon, #shield_h2{
+    margin-top: 18px;
+    margin-left: 18px;
+}
+
+#shield_btn{
+    margin-top: 20px;
+    border: none;
+    margin-left: 10px;
+    font-size: 15px;
+    color: white;
+    background-color: #2f7000;
+    border-radius: 5px;
+    height: 25px;
+}
+
+#important{
+    margin: auto;
+    width: 727px;
+    height: 83px;
+    border: 1px solid grey;
+}
+
+#protect_change{
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    
+    display: flex;
+    width: 727px;
+    height: 45px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #d2e6c8;
+}
+/* protect div ends */
+
+
+/* hotel div starts */
+
+#hotel_div{
+    height: 411px;
+    width: 375px;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#hotel_name{
+    color: white;
+    font-weight: bolder;
+    font-size: 17px;
+    margin-left: 18px;
+    padding-top: 7.5em;
+    
+    
+    
+}
+
+/* hotel div ends */
+/* #hotelImg_div{
+  
+  
+;
+} */
+
+
+/* main div ends here */
+
+
+/* 2nd main div starts here */
+
+#secondMain{
+display: flex;
+}
+
+#protect{
+    height: 235px;
+    width: 763px;
+    background-color: white;
+    margin-left: 184px;
+    margin-top: 15px;
+}
+
+
+
+/* card div css starts */
+
+#card{
+    height: 480px;
+    width: 763px;
+    background-color: white;
+    margin-left: 184px;
+    margin-top: 15px;
+}
+
+#debit{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    /* border: 1px solid red; */
+    width: 350px;
+    margin-left: 54px;
+}
+#debit>div{
+    color: black;
+}
+
+#debit_image{
+    margin-left: 46px;
+    width: 330px;
+    height: 20px;
+    margin-top: 15px;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+}
+
+#debit_image>img{
+    height: 100%;
+    margin-left: 10px;
+}
+
+#cardInputData_div{
+    margin-top: 25px;
+    margin-left: 48px;
+}
+
+/* card div css ends */
+
+
+
+/* price div starts  */
+
+#price{
+    height: 320px;
+    width: 375px;
+    background-color: white;
+    margin-top: 15px;
+    margin-left: 20px;
+    
+}
+
+#price_h3{
+    margin-left: 18px;
+    font-size: 20px;
+    color: #202843;
+}
+
+#price_total{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 18px;
+    width: 90%;
+    height: 30px;
+    /* border: 1px solid orange; */
+}
+
+#price_para{
+    margin-left: 18px;
+    font-size: 13px;
+    color: #306fbd;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/* price div ends */
+
+
+/* 2nd main div ends here */
+
+
+/* booking manage div div starts here */
+
+#booking_manage{
+height: 565px;
+width: 763px;
+background-color: white;
+margin-left: 184px;
+margin-top: 20px;
+}
+
+#confirmation_data{
+   margin-left: 18px;
+}
+
+#booking_h2{
+    margin-left: 18px;
+    padding-top: 18px;
+    color: #202843;
+    font-size: 22px;
+}
+#booking_h3{
+    margin-left: 18px;
+}
+.booking_para1{
+    
+    font-size: 15px;
+    font-family:"Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+    color: #616161;
+}
+
+#booking_mail{
+    padding: 10px;
+}
+
+/* booking div ends here */
+
+
+
+/* <!-- complete button div starts here --> */
+
+#complete_booking{
+width: 763px;
+background-color: white;
+margin-left: 184px;
+margin-top: 20px;
+padding-bottom: 10px;
+}
+
+#booking_button{
+    display: flex;
+    background-color: #da345f;
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-family:"Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+    text-align: center;
+    margin-left: 18px;
+    padding: 12px 20px 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#book_para1{
+  padding-top: 18px;
+  padding-left: 18px;
+    
+}
+
+li,#book_para2,#book_para3{
+    font-size: 13px;
+    line-height: 18.35px;
+    font-family:"Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+    color: #616161;
+    text-align: left;
+}
+
+.book_para4{
+    font-size: 13px;
+    /* line-height: 18.35px; */
+    font-family:"Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+    color: #616161;
+    text-align: left;
+    margin-left: 18px;
+}
+
+#book_para2,#book_para3{
+    padding-left: 18px;
+}
+
+/* <!-- complete button div ends here --> */
+
+
+/* footer starts here */
+
+#footer_div{
+    font-size: 15px;
+    margin-top: 3em;
+}
+
+#para_foot{
+    color: #0065b8;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+   
+    
+}
+
+#footerDiv_data{
+    display: flex;
+    
+    justify-content: center;
+
+     color: #616161; 
+     
+     font-size: 14px;
+     line-height: 5px;
+}
+#para_foot-2{
+    color: #616161; 
+    text-align: center;
+    font-size: 14px;
+    margin-top: -1px;
+}
+
+#img_footer{
+
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    height: 22px;
+    width: 150px;
+}
+
+/* footer ends here */

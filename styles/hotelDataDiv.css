@@ -1,0 +1,16 @@
+
+#img_box{
+    /* border: 1px solid red; */
+    width: 375px;
+    height: 160px;
+}
+
+#img{
+    width: 100%;
+    height: 160px;
+}
+
+#detail_div{
+    /* border: 1px solid blue  ; */
+    margin-left: 18px;
+}
